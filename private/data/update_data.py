@@ -23,6 +23,8 @@ def updateFuturesMarket(market):
     #!!!! Test
     carryMaturity = row.iloc[0]['CARRY']
     priceMaturity = row.iloc[0]['PRICE']
+    carryMaturity = carryMaturity[0:6] # market_data file requires VIX maturity in 8 digit form but file uses 6 digits!
+    priceMaturity = priceMaturity[0:6] # market_data file requires VIX maturity in 8 digit form but file uses 6 digits!
     symbolIB = row.iloc[0]['IB']
     print("Carry Maturity: ", carryMaturity)
     print("Price Maturity: ", priceMaturity)
@@ -90,7 +92,7 @@ def updateFuturesMarket(market):
         # Create dataframe to write back to carry file
         # Check for Carry maturity
 
-        downloaded_carry_file = source_path + 'downloads/' + market + '/' + priceMaturity + '.csv'
+        downloaded_carry_file = source_path + 'downloads/' + market + '/' + carryMaturity + '.csv'
         if not(os.path.isfile(downloaded_carry_file)):
             print("No CARRY file...")
             # However, we still need to create new CARRY FILE rows with PRICE and blanks in CARRY column!

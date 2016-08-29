@@ -17,7 +17,7 @@ if __name__=="__main__":
 
     callback = IBWrapper()
     client=IBclient(callback)
-    """
+
     ibcontract = IBcontract()
     ibcontract.secType = "FUT"
     ibcontract.expiry="201509"
@@ -29,7 +29,7 @@ if __name__=="__main__":
     ibcontract.expiry = "201612"
     ibcontract.symbol = "GE"
     ibcontract.exchange = "GLOBEX"
-    """
+
 
     ## Get contract details
     cdetails=client.get_contract_details(ibcontract)

@@ -97,6 +97,7 @@ class IBWrapper(EWrapper):
 
         if date[:8] == 'finished':
             setattr(self, "flag_historicdata_finished", True)
+            print("finished date value: ", date)
         else:
             historicdata=self.data_historicdata[reqId]
             #date=datetime.datetime.strptime(date,"%Y%m%d")

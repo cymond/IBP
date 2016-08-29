@@ -10,11 +10,11 @@ import time
                  PRICE AND CARRY series and to perform the adjustment to existing PRICE series
     ===================================================================================================
 '''
-path = '/home/pete/Documents/IBDocs/'
-oldPath = path + 'legacycsv/'
+source_path = '/home/pete/Documents/IBDocs/'
+destination_path = "/home/pete/pysystemtrade/sysdata/legacycsv/"
 
 today = time.strftime("%Y%m%d")
-errorFile = path + 'Logs/' + today + "download_errors" + ".txt"
+errorFile = source_path + 'Logs/' + today + "download_errors" + ".txt"
 
 
 def get_stitch_row(symbol):
@@ -31,7 +31,7 @@ def get_stitch_row(symbol):
 def get_stitched_Price( stitchdate, newCarryContract, newPriceContract):
 
     newpricefile = newPricePath + str(newPriceContract) + '.csv'
-    oldpricefile = oldPath + market + '_price.csv'
+    oldpricefile = destination_path + market + '_price.csv'
 
     newPriceDF = pd.read_csv(newpricefile,  usecols=[0, 1], index_col= 0, dayfirst=True)
     newPriceDF.rename(columns={'close': 'PRICE'}, inplace=True)
@@ -62,7 +62,7 @@ def get_stitched_Price( stitchdate, newCarryContract, newPriceContract):
     # First we must test if there is a new CARRY file. Some contracts do not trade until let in the cycle and
     # IB wont download a corresponding file. Blanks need to be filled in the CARRY columna until then
 
-    oldcarryfile = oldPath + market + '_carrydata.csv'
+    oldcarryfile = destination_path + market + '_carrydata.csv'
     oldCarryDF = pd.read_csv(oldcarryfile, dtype={'CARRY_CONTRACT': str, 'PRICE_CONTRACT': str})
     oldCarryDF = oldCarryDF.set_index('DATETIME').copy()
     oldCarryDF = oldCarryDF[:stitchdate][:-1]
@@ -97,3 +97,23 @@ print("stitch date :", stitchDate, "New Carry Contract: ", newCarryContract, "Ne
 
 
 stitchedPrice = get_stitched_Price(stitchDate, newCarryContract, newPriceContract)
+
+
+
+#Notes
+'''
+Structure of stitchdata
+CAVER, DATETIME, FRO_PRICE, FRO_CARRY, TO_PRICE, TO_CARRY, DELTA, DONE
+
+
+Checks before stitching
+1. DATETIME date should be before today's date
+2. DATETIME date should exist in both FRO_PRICE and TO_PRICE time series
+
+Code should be able to handle stitching whole a Panama stitched price series as long as stitch dates and
+ALL the required raw maturities are avaiable.
+
+This stitching starts from the earliest not DONE date to the latest
+
+
+'''

@@ -94,7 +94,7 @@ def deleteFXmarket(market, date_to):
 markets = ["KR3","V2X","EDOLLAR","MXP","CORN","EUROSTX","GAS_US","PLAT","US2","LEANHOG","GBP","VIX","CAC","COPPER","CRUDE_W","BOBL","WHEAT","JPY","NASDAQ","US5","SOYBEAN","AUD","SP500","PALLAD","KR10","LIVECOW"]
 fxmarkets = ["GBPUSD", "KRWUSD", "EURUSD"]
 
-delete_date = '2016-07-29'
+delete_date = '2016-08-07'
 
 for market in markets:
     deleteMarket (market, delete_date)

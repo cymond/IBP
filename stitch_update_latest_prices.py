@@ -11,17 +11,17 @@ def updateMarket(market):
     # Report if no new data... or for each row with blank carry...
     print("==========================================================================================")
     print("Starting Update for.... ", market)
-    path = '/home/pete/Documents/IBDocs/'
+    path = '/home/pete/Documents/Python Packages/sysIB/private/data/downloads/quandl/'
     legacyPath = "/home/pete/pysystemtrade/sysdata/legacycsv/"
     today = time.strftime("%Y%m%d")
     errorFile = path + 'Logs/' + today + "download_errors" + ".txt"
 
-    dataFilename = path + 'marketdata.csv'
+    dataFilename = '/home/pete/Documents/IBDocs/marketdata_stitch.csv'
     mdf = pd.read_csv(dataFilename, dtype={'CARRY': str, 'PRICE': str})
 
     # check for carry and price maturities
     row = mdf.loc[mdf['CAVER'] == market]
-    #print(row.iloc[0]['CARRY'])
+    # print(row.iloc[0]['CARRY'])
 
     carryMaturity = row.iloc[0]['CARRY']
     priceMaturity = row.iloc[0]['PRICE']
@@ -29,7 +29,6 @@ def updateMarket(market):
     priceMaturity = priceMaturity[0:6]  # market_data file requires VIX maturity in 8 digit form but file uses 6 digits!
     print("Carry Maturity: ", carryMaturity)
     print("Price Maturity: ", priceMaturity)
-
 
     # Get current price and carry files and check dates...
 
@@ -106,6 +105,7 @@ def updateMarket(market):
     else:
         print("Cannot open file ", fPriceFile)
         #Needs to be put in
+'''
 
 def updateFX(market):
 
@@ -168,15 +168,16 @@ def updateFX(market):
 
 
 
+'''
 
-
-markets = ["KR3","EDOLLAR","MXP","CORN","EUROSTX","PLAT","LEANHOG","GBP","COPPER","CRUDE_W","BOBL","WHEAT","JPY","NASDAQ","SOYBEAN","AUD","SP500","PALLAD","KR10","LIVECOW"]
-fxmarkets = ["GBPUSD", "KRWUSD", "EURUSD"]
-#markets = ["AUD"]
+markets = ["V2X","GAS_US","VIX","CAC","GOLD", "US2", "US5"]
+#markets = ["CAC"]
+# fxmarkets = ["GBPUSD", "KRWUSD", "EURUSD"]
+ #markets = ["AUD"]
 
 
 for market in markets:
     updateMarket (market)
 
-for market in fxmarkets:
-    updateFX(market)
+#for market in fxmarkets:
+#    updateFX(market)
