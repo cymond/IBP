@@ -97,7 +97,7 @@ class IBWrapper(EWrapper):
 
         if date[:8] == 'finished':
             setattr(self, "flag_historicdata_finished", True)
-            print("finished date value: ", date)
+
         else:
             historicdata=self.data_historicdata[reqId]
             #date=datetime.datetime.strptime(date,"%Y%m%d")
@@ -115,7 +115,7 @@ class IBclient(object):
         self.cb=callback
 
     
-    def get_IB_historical_data(self, ibcontract, durationStr="1 M", barSizeSetting="1 day", tickerid=MEANINGLESS_NUMBER, whatToShow="TRADES"):
+    def get_IB_historical_data(self, ibcontract, durationStr="3 M", barSizeSetting="1 day", tickerid=MEANINGLESS_NUMBER, whatToShow="TRADES"):
         
         """
         Returns historical prices for a contract, up to today
@@ -132,11 +132,11 @@ class IBclient(object):
         if exchange == 'KSE':
             yesterday = datetime.datetime.now(timezone('Asia/Tokyo')) - datetime.timedelta(1)
             last_yesterday = yesterday.replace(hour=23, minute=59, second=59)
-            print(last_yesterday.strftime("%Y%m%d %H:%M:%S %Z"))
+            #print("End date and time: ", last_yesterday.strftime("%Y%m%d %H:%M:%S %Z"))
         else:
             yesterday = datetime.datetime.now(timezone('GMT')) - datetime.timedelta(1)
             last_yesterday = yesterday.replace(hour=23, minute=59, second=59)
-            print(last_yesterday.strftime("%Y%m%d %H:%M:%S %Z"))
+            #print("End date and time: ", last_yesterday.strftime("%Y%m%d %H:%M:%S %Z"))
 
         self.cb.init_error()
         self.cb.init_historicprices(tickerid)
@@ -186,10 +186,14 @@ class IBclient(object):
             pass
             
         if iserror:
-            print(self.cb.error_msg)
-            if (self.cb.error_code == 162) or (self.cb.error_code) == 200:
+            #print(self.cb.error_msg)
+            # Handle the error so that code can continue
+            #raise Exception("Problem getting Historic data")
+            if (self.cb.error_code == 162) or (self.cb.error_code) == 200 or (self.cb.error_code) == 0:
+                # Returns with no results dataFrame, use this to continue to next
                 return
             else:
+                print(self.cb.error_code)
                 raise Exception("Problem getting historic data")
         
         historicdata=self.cb.data_historicdata[tickerid]

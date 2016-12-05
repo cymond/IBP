@@ -11,12 +11,12 @@ def deleteMarket(market, date_to):
     # Report if no new data... or for each row with blank carry...
     print("==========================================================================================")
     print("Starting Update for.... ", market)
-    path = '/home/pete/Documents/IBDocs/'
-    legacyPath = "/home/pete/pysystemtrade/sysdata/legacycsv/"
+    path = '/home/pete/Documents/Python Packages/sysIB/private/data/admin/'
+    legacyPath = "/home/pete/pysystemtrade/sysdata/legacycsv_test/"
     today = time.strftime("%Y%m%d")
     errorFile = path + 'Logs/' + today + "download_errors" + ".txt"
 
-    dataFilename = path + 'marketdata.csv'
+    dataFilename = path + 'marketdata_test.csv'
     mdf = pd.read_csv(dataFilename, dtype={'CARRY': str, 'PRICE': str})
     print(mdf)
     # check for carry and price maturities
@@ -57,7 +57,7 @@ def deleteFXmarket(market, date_to):
     # 2. Access source file and add corresponding rows.
     # Report if no new data... or any other erros
     path = '/home/pete/Documents/IBDocs/'
-    legacyPath = "/home/pete/pysystemtrade/sysdata/legacycsv/"
+    legacyPath = "/home/pete/pysystemtrade/sysdata/legacycsv_test/"
     today = time.strftime("%Y%m%d")
     errorFile = path + 'Logs/' + today + "download_errors" + ".txt"
 
@@ -89,15 +89,42 @@ def deleteFXmarket(market, date_to):
 
 
 
+# Get current price and carry files and check dates...
+def print_market_last_date(instrument):
+    legacyPath = "/home/pete/pysystemtrade/sysdata/legacycsv_test/"
+    priceFile = legacyPath + instrument + '_price.csv'
+    carryFile = legacyPath + instrument + '_carrydata.csv'
 
+    priceDf = pd.read_csv(priceFile)
+    carryDf = pd.read_csv(carryFile,dtype={'CARRY_CONTRACT': str, 'PRICE_CONTRACT': str})
+    priceDf = priceDf.set_index('DATETIME').copy()
+    carryDf = carryDf.set_index('DATETIME').copy()
 
-markets = ["KR3","V2X","EDOLLAR","MXP","CORN","EUROSTX","GAS_US","PLAT","US2","LEANHOG","GBP","VIX","CAC","COPPER","CRUDE_W","BOBL","WHEAT","JPY","NASDAQ","US5","SOYBEAN","AUD","SP500","PALLAD","KR10","LIVECOW"]
+    price_date = priceDf.iloc[-1:].index[0]
+    carry_date = carryDf.iloc[-1:].index[0]
+    print(instrument, ":", "Price Date: ", price_date, "Carry Date: ", carry_date )
+
+markets = ["V2X","GAS_US","VIX","CAC","GOLD",
+           "US2", "US5","EDOLLAR","MXP","CORN",
+           "EUROSTX","PLAT","LEANHOG","GBP","COPPER",
+           "CRUDE_W","BOBL","WHEAT","JPY","NASDAQ",
+           "SOYBEAN","AUD","SP500","PALLAD","LIVECOW",
+            "KR3", "KR10",]
+
+#markets = ["BOBL","AUD"]
 fxmarkets = ["GBPUSD", "KRWUSD", "EURUSD"]
-
-delete_date = '2016-08-07'
+'''
+delete_date = '2016-09-15'
 
 for market in markets:
     deleteMarket (market, delete_date)
 
 for market in fxmarkets:
     deleteFXmarket (market, delete_date)
+'''
+
+print("==================================================================================")
+
+for market in markets:
+    print()
+    print_market_last_date(market)

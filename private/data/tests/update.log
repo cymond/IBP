@@ -1,0 +1,934 @@
+20161201 01:46:36AM,Downloads,ERROR   ,The file, directories.csv, does not exist
+20161201 01:11:10PM,Downloads,ERROR   ,concat() got multiple values for argument 'axis'
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 105, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 69, in main
+    result = pd.concat(curr_markets_df, positions_df, axis=1)
+TypeError: concat() got multiple values for argument 'axis'
+20161201 01:11:56PM,Downloads,ERROR   ,first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 105, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 69, in main
+    result = pd.concat(curr_markets_df, positions_df)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 834, in concat
+    copy=copy)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 849, in __init__
+    '"{0}"'.format(type(objs).__name__))
+TypeError: first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"
+20161201 01:13:22PM,Downloads,ERROR   ,first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 105, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 69, in main
+    result = pd.concat(curr_markets_df, positions_df)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 834, in concat
+    copy=copy)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 849, in __init__
+    '"{0}"'.format(type(objs).__name__))
+TypeError: first argument must be an iterable of pandas objects, you passed an object of type "DataFrame"
+20161201 08:56:18PM,Downloads,ERROR   ,Length mismatch: Expected axis has 0 elements, new values have 5 elements
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 106, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 85, in main
+    port_df1.columns = ['Symbol', 'Expiry', 'Quantity', 'Last', 'Value']
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/generic.py", line 2682, in __setattr__
+    return object.__setattr__(self, name, value)
+  File "pandas/src/properties.pyx", line 65, in pandas.lib.AxisProperty.__set__ (pandas/lib.c:45018)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/generic.py", line 425, in _set_axis
+    self._data.set_axis(axis, labels)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2578, in set_axis
+    (old_len, new_len))
+ValueError: Length mismatch: Expected axis has 0 elements, new values have 5 elements
+20161201 11:20:46PM,Downloads,ERROR   ,4
+Traceback (most recent call last):
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/indexes/base.py", line 1876, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4027)
+  File "pandas/index.pyx", line 157, in pandas.index.IndexEngine.get_loc (pandas/index.c:3891)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12408)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12359)
+KeyError: 4
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 114, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 93, in main
+    new_df[4].fillna(0,inplace=True)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/frame.py", line 1992, in __getitem__
+    return self._getitem_column(key)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/frame.py", line 2004, in _getitem_column
+    result = result[key]
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/frame.py", line 1992, in __getitem__
+    return self._getitem_column(key)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/frame.py", line 1999, in _getitem_column
+    return self._get_item_cache(key)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/generic.py", line 1345, in _get_item_cache
+    values = self._data.get(item)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 3225, in get
+    loc = self.items.get_loc(item)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/indexes/base.py", line 1878, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4027)
+  File "pandas/index.pyx", line 157, in pandas.index.IndexEngine.get_loc (pandas/index.c:3891)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12408)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12359)
+KeyError: 4
+20161201 11:29:20PM,Downloads,ERROR   ,cannot convert the series to <class 'int'>
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 115, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 94, in main
+    new_df['POSITION'] = int(new_df['POSITION'])
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/series.py", line 80, in wrapper
+    "{0}".format(str(converter)))
+TypeError: cannot convert the series to <class 'int'>
+20161202 12:17:47AM,Downloads,ERROR   ,'EXPIRTY'
+Traceback (most recent call last):
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/indexes/base.py", line 1876, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4027)
+  File "pandas/index.pyx", line 157, in pandas.index.IndexEngine.get_loc (pandas/index.c:3891)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12408)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12359)
+KeyError: 'EXPIRTY'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 116, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 90, in main
+    port_df1['EXPIRY'] = port_df1['EXPIRTY'][:6]
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/frame.py", line 1992, in __getitem__
+    return self._getitem_column(key)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/frame.py", line 1999, in _getitem_column
+    return self._get_item_cache(key)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/generic.py", line 1345, in _get_item_cache
+    values = self._data.get(item)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 3225, in get
+    loc = self.items.get_loc(item)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/indexes/base.py", line 1878, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4027)
+  File "pandas/index.pyx", line 157, in pandas.index.IndexEngine.get_loc (pandas/index.c:3891)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12408)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12359)
+KeyError: 'EXPIRTY'
+20161202 12:18:43AM,Downloads,ERROR   ,'EXPIRTY'
+Traceback (most recent call last):
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/indexes/base.py", line 1876, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4027)
+  File "pandas/index.pyx", line 157, in pandas.index.IndexEngine.get_loc (pandas/index.c:3891)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12408)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12359)
+KeyError: 'EXPIRTY'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 116, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 90, in main
+    port_df1['EXPIRY'] = port_df1['EXPIRTY'][:6]
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/frame.py", line 1992, in __getitem__
+    return self._getitem_column(key)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/frame.py", line 1999, in _getitem_column
+    return self._get_item_cache(key)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/generic.py", line 1345, in _get_item_cache
+    values = self._data.get(item)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 3225, in get
+    loc = self.items.get_loc(item)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/indexes/base.py", line 1878, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/index.pyx", line 137, in pandas.index.IndexEngine.get_loc (pandas/index.c:4027)
+  File "pandas/index.pyx", line 157, in pandas.index.IndexEngine.get_loc (pandas/index.c:3891)
+  File "pandas/hashtable.pyx", line 675, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12408)
+  File "pandas/hashtable.pyx", line 683, in pandas.hashtable.PyObjectHashTable.get_item (pandas/hashtable.c:12359)
+KeyError: 'EXPIRTY'
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : AUD       : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : BTP       : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : CAC40     : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : CL        : from nan to 201712
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : EOE       : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : ES        : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : ESTX50    : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : GBL       : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : HG        : from 201703 to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : K200      : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : NG        : from 201612 to 201702
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : NQ        : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : NZD       : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : OAT       : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : PA        : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : PL        : from nan to 201701
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : SMI       : from nan to 201612
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : ZB        : from nan to 201703
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : ZF        : from nan to 201703
+20161202 01:21:10AM,Downloads,ERROR   ,ROLL  : ZN        : from nan to 201703
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,INFO    ,OK  : 1         : Position is OK
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : AUD       : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : BTP       : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : CAC40     : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : CL        : from nan to 201712
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : EOE       : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : ES        : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : ESTX50    : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : GBL       : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : HG        : from 201703 to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : K200      : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : NG        : from 201612 to 201702
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : NQ        : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : NZD       : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : OAT       : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : PA        : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : PL        : from nan to 201701
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : SMI       : from nan to 201612
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : ZB        : from nan to 201703
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : ZF        : from nan to 201703
+20161202 01:22:08AM,Downloads,ERROR   ,ROLL  : ZN        : from nan to 201703
+20161202 01:24:06AM,Downloads,INFO    ,OK  : 3KTB      : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : EUR       : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : FLKTB     : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : GBM       : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : GBP       : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : GC        : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : GE        : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : JPY       : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : LE        : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : MXP       : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : V2TX      : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : VIX       : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : ZC        : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : ZS        : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : ZT        : Position is OK
+20161202 01:24:06AM,Downloads,INFO    ,OK  : ZW        : Position is OK
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : AUD       : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : BTP       : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : CAC40     : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : CL        : from nan to 201712
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : EOE       : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : ES        : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : ESTX50    : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : GBL       : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : HG        : from 201703 to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : K200      : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : NG        : from 201612 to 201702
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : NQ        : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : NZD       : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : OAT       : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : PA        : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : PL        : from nan to 201701
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : SMI       : from nan to 201612
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : ZB        : from nan to 201703
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : ZF        : from nan to 201703
+20161202 01:24:06AM,Downloads,ERROR   ,ROLL  : ZN        : from nan to 201703
+20161202 01:26:15AM,Downloads,INFO    ,OK  : 3KTB      : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : EUR       : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : FLKTB     : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : GBM       : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : GBP       : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : GC        : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : GE        : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : JPY       : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : LE        : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : MXP       : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : V2TX      : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : VIX       : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : ZC        : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : ZS        : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : ZT        : Position is OK
+20161202 01:26:15AM,Downloads,INFO    ,OK  : ZW        : Position is OK
+20161202 01:26:15AM,Downloads,ERROR   ,ROLL  : HG        : from 201703 to 201612
+20161202 01:26:15AM,Downloads,ERROR   ,ROLL  : NG        : from 201612 to 201702
+20161202 02:27:40AM,Downloads,INFO    ,OK  : 3KTB      : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : EUR       : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : FLKTB     : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : GBM       : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : GC        : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : JPY       : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : LE        : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : MXP       : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : VIX       : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : ZC        : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : ZS        : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : ZT        : Position is OK
+20161202 02:27:40AM,Downloads,INFO    ,OK  : ZW        : Position is OK
+20161202 02:27:40AM,Downloads,ERROR   ,BUY    : GBP       : Buy 1 contracts
+20161202 02:27:40AM,Downloads,ERROR   ,BUY    : GE        : Buy 1 contracts
+20161202 02:27:40AM,Downloads,ERROR   ,ROLL  : HG        : from 201703 to 201612
+20161202 02:27:40AM,Downloads,ERROR   ,ROLL  : NG        : from 201612 to 201702
+20161202 02:27:40AM,Downloads,ERROR   ,BUY    : V2TX      : Buy 1 contracts
+20161202 07:22:44AM,Downloads,INFO    ,OK  : 3KTB      : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : EUR       : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : FLKTB     : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : GC        : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : JPY       : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : LE        : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : MXP       : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : VIX       : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : ZC        : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : ZS        : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : ZT        : Position is OK
+20161202 07:22:44AM,Downloads,INFO    ,OK  : ZW        : Position is OK
+20161202 07:22:44AM,Downloads,ERROR   ,ROLL  : GBM       : from 201612 to 201703
+20161202 07:22:44AM,Downloads,ERROR   ,ROLL  : HG        : from 201703 to 201612
+20161202 07:22:44AM,Downloads,ERROR   ,ROLL  : NG        : from 201612 to 201702
+20161202 07:22:44AM,Downloads,ERROR   ,BUY    : V2TX      : Buy 1 contracts
+20161202 10:13:13AM,Downloads,INFO    ,OK  : 3KTB      : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : EUR       : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : FLKTB     : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : GC        : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : JPY       : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : LE        : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : MXP       : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : VIX       : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : ZC        : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : ZS        : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : ZT        : Position is OK
+20161202 10:13:13AM,Downloads,INFO    ,OK  : ZW        : Position is OK
+20161202 10:13:13AM,Downloads,ERROR   ,ROLL  : GBM       : from 201612 to 201703
+20161202 10:13:13AM,Downloads,ERROR   ,ROLL  : HG        : from 201703 to 201612
+20161202 10:13:13AM,Downloads,ERROR   ,ROLL  : NG        : from 201612 to 201702
+20161202 10:13:13AM,Downloads,ERROR   ,BUY    : V2TX      : Buy 1 contracts
+20161202 12:25:13PM,Downloads,INFO    ,OK  : 3KTB      : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : EUR       : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : FLKTB     : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : GC        : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : HG        : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : JPY       : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : LE        : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : MXP       : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : VIX       : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : ZC        : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : ZS        : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : ZT        : Position is OK
+20161202 12:25:13PM,Downloads,INFO    ,OK  : ZW        : Position is OK
+20161202 12:25:13PM,Downloads,ERROR   ,ROLL  : GBM       : from 201612 to 201703
+20161202 12:25:13PM,Downloads,ERROR   ,ROLL  : NG        : from 201612 to 201702
+20161202 12:25:13PM,Downloads,ERROR   ,BUY    : V2TX      : Buy 1 contracts
+20161202 12:58:30PM,Downloads,ERROR   ,Shape of passed values is (7, 39), indices imply (7, 37)
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 131, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 93, in main
+    new_df = pd.concat([result, port_df1], axis=1)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 835, in concat
+    return op.get_result()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 1025, in get_result
+    concat_axis=self.axis, copy=self.copy)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 4476, in concatenate_block_managers
+    return BlockManager(blocks, axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2537, in __init__
+    self._verify_integrity()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2747, in _verify_integrity
+    construction_error(tot_items, block.shape[1:], self.axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 3899, in construction_error
+    passed, implied))
+ValueError: Shape of passed values is (7, 39), indices imply (7, 37)
+20161202 12:59:14PM,Downloads,ERROR   ,Shape of passed values is (7, 39), indices imply (7, 37)
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 131, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 93, in main
+    new_df = pd.concat([result, port_df1], axis=1)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 835, in concat
+    return op.get_result()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 1025, in get_result
+    concat_axis=self.axis, copy=self.copy)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 4476, in concatenate_block_managers
+    return BlockManager(blocks, axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2537, in __init__
+    self._verify_integrity()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2747, in _verify_integrity
+    construction_error(tot_items, block.shape[1:], self.axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 3899, in construction_error
+    passed, implied))
+ValueError: Shape of passed values is (7, 39), indices imply (7, 37)
+20161202 01:02:28PM,Downloads,ERROR   ,Shape of passed values is (7, 39), indices imply (7, 37)
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 131, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 93, in main
+    new_df = pd.concat([result, port_df1], axis=1)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 835, in concat
+    return op.get_result()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 1025, in get_result
+    concat_axis=self.axis, copy=self.copy)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 4476, in concatenate_block_managers
+    return BlockManager(blocks, axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2537, in __init__
+    self._verify_integrity()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2747, in _verify_integrity
+    construction_error(tot_items, block.shape[1:], self.axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 3899, in construction_error
+    passed, implied))
+ValueError: Shape of passed values is (7, 39), indices imply (7, 37)
+20161202 01:06:50PM,Downloads,ERROR   ,Shape of passed values is (7, 39), indices imply (7, 37)
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 132, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 94, in main
+    new_df = pd.concat([result, port_df1], axis=1)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 835, in concat
+    return op.get_result()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 1025, in get_result
+    concat_axis=self.axis, copy=self.copy)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 4476, in concatenate_block_managers
+    return BlockManager(blocks, axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2537, in __init__
+    self._verify_integrity()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2747, in _verify_integrity
+    construction_error(tot_items, block.shape[1:], self.axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 3899, in construction_error
+    passed, implied))
+ValueError: Shape of passed values is (7, 39), indices imply (7, 37)
+20161202 01:11:14PM,Downloads,ERROR   ,Shape of passed values is (7, 39), indices imply (7, 37)
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 134, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 94, in main
+    new_df = pd.concat([result, port_df1], axis=1)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 835, in concat
+    return op.get_result()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 1025, in get_result
+    concat_axis=self.axis, copy=self.copy)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 4476, in concatenate_block_managers
+    return BlockManager(blocks, axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2537, in __init__
+    self._verify_integrity()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2747, in _verify_integrity
+    construction_error(tot_items, block.shape[1:], self.axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 3899, in construction_error
+    passed, implied))
+ValueError: Shape of passed values is (7, 39), indices imply (7, 37)
+20161202 01:13:05PM,Downloads,ERROR   ,Shape of passed values is (7, 39), indices imply (7, 37)
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 138, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 97, in main
+    new_df = pd.concat([result, port_df1], axis=1)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 835, in concat
+    return op.get_result()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 1025, in get_result
+    concat_axis=self.axis, copy=self.copy)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 4476, in concatenate_block_managers
+    return BlockManager(blocks, axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2537, in __init__
+    self._verify_integrity()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2747, in _verify_integrity
+    construction_error(tot_items, block.shape[1:], self.axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 3899, in construction_error
+    passed, implied))
+ValueError: Shape of passed values is (7, 39), indices imply (7, 37)
+20161202 01:14:16PM,Downloads,ERROR   ,Shape of passed values is (7, 39), indices imply (7, 37)
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 139, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 98, in main
+    new_df = pd.concat([result, port_df1], axis=1)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 835, in concat
+    return op.get_result()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 1025, in get_result
+    concat_axis=self.axis, copy=self.copy)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 4476, in concatenate_block_managers
+    return BlockManager(blocks, axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2537, in __init__
+    self._verify_integrity()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 2747, in _verify_integrity
+    construction_error(tot_items, block.shape[1:], self.axes)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/core/internals.py", line 3899, in construction_error
+    passed, implied))
+ValueError: Shape of passed values is (7, 39), indices imply (7, 37)
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : GBM       : from nan to 201703
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : GBM       : Sell 3.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : HG        : from nan to 201703
+20161202 04:44:45PM,Downloads,ERROR   ,BUY    : HG        : Buy 1.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : ZC        : from nan to 201712
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : ZC        : Sell 2.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : EUR       : from nan to 201612
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : EUR       : Sell 1.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : NG        : from nan to 201702
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : NG        : Sell 1.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : GC        : from nan to 201612
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : GC        : Sell 1.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : JPY       : from nan to 201612
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : JPY       : Sell 1.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : FLKTB     : from nan to 201612
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : FLKTB     : Sell 2.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 3KTB      : from nan to 201612
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : 3KTB      : Sell 1.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : HE        : from nan to 201706
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : HE        : Sell 1.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : LE        : from nan to 201710
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : LE        : Sell 1.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : MXP       : from nan to 201612
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : MXP       : Sell 1.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : ZS        : from nan to 201711
+20161202 04:44:45PM,Downloads,ERROR   ,BUY    : ZS        : Buy 3.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : ZT        : from nan to 201703
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : ZT        : Sell 2.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : V2TX      : from nan to 201701
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : V2TX      : Sell 8.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : VIX       : from nan to 201701
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : VIX       : Sell 2.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : ZW        : from nan to 201712
+20161202 04:44:45PM,Downloads,ERROR   ,SELL    : ZW        : Sell 5.0 contracts
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 0         : from 20161220 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 1         : from 20161219 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 2         : from 20161220 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 3         : from 20161208 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 4         : from 20170308 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 5         : from 20161219 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 6         : from 20161228 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 7         : from 20191216 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 8         : from 20170614 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 9         : from 20170329 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 10        : from 20161219 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 11        : from 20171031 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 12        : from 20161219 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 13        : from 20161228 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 14        : from 20170127 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 15        : from nan to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 16        : from nan to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 17        : from 20170118 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 18        : from 20170118 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 19        : from 20171214 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 20        : from 20171114 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 21        : from 20170331 to nan
+20161202 04:44:45PM,Downloads,ERROR   ,ROLL  : 22        : from 20171214 to nan
+20161203 02:00:08PM,Downloads,ERROR   ,No common columns to perform merge on
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 153, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 111, in main
+    new_df = pd.merge(result, port_df1)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 34, in merge
+    copy=copy, indicator=indicator)
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 199, in __init__
+    self.join_names) = self._get_merge_keys()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 396, in _get_merge_keys
+    self._validate_specification()
+  File "/home/pete/.local/lib/python3.4/site-packages/pandas/tools/merge.py", line 488, in _validate_specification
+    raise MergeError('No common columns to perform merge on')
+pandas.tools.merge.MergeError: No common columns to perform merge on
+20161203 04:12:56PM,Downloads,INFO    ,OK  : GBM       : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : HG        : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : ZC        : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : EUR       : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : GC        : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : JPY       : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : FLKTB     : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : 3KTB      : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : LE        : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : MXP       : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : ZS        : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : ZT        : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : V2TX      : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : VIX       : Position is OK
+20161203 04:12:56PM,Downloads,INFO    ,OK  : ZW        : Position is OK
+20161203 04:12:56PM,Downloads,ERROR   ,ROLL  : NG        : from 201701 to 201702
+20161203 05:21:46PM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : 3KTB      : from nan to 201612
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : 3KTB      : Sell 1 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : EUR       : from nan to 201612
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : EUR       : Sell 1 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : FLKTB     : from nan to 201612
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : FLKTB     : Sell 2 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : GBM       : from nan to 201703
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : GBM       : Sell 3 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : GC        : from nan to 201612
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : GC        : Sell 1 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : GE        : from 201612 to 201912
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : GE        : Sell 11 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : GE        : from 201906 to 201912
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : GE        : Sell 4 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : HG        : from nan to 201703
+20161203 05:21:46PM,Downloads,ERROR   ,BUY    : HG        : Buy 1 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : JPY       : from nan to 201612
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : JPY       : Sell 1 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : LE        : from nan to 201710
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : LE        : Sell 1 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : MXP       : from nan to 201612
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : MXP       : Sell 1 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : NG        : from nan to 201702
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : NG        : Sell 1 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : V2TX      : from nan to 201701
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : V2TX      : Sell 9 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : VIX       : from nan to 201701
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : VIX       : Sell 2 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : ZC        : from 201612 to 201712
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : ZC        : Sell 1 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : ZS        : from nan to 201711
+20161203 05:21:46PM,Downloads,ERROR   ,BUY    : ZS        : Buy 3 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : ZT        : from nan to 201703
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : ZT        : Sell 1 contracts
+20161203 05:21:46PM,Downloads,ERROR   ,ROLL  : ZW        : from 201612 to 201712
+20161203 05:21:46PM,Downloads,ERROR   ,SELL    : ZW        : Sell 3 contracts
+20161203 05:23:14PM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : GBM       : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : HG        : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : ZC        : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : EUR       : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : GC        : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : JPY       : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : FLKTB     : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : 3KTB      : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : LE        : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : MXP       : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : ZS        : Position is OK
+20161203 05:26:01PM,Downloads,INFO    ,OK  : VIX       : Position is OK
+20161203 05:26:01PM,Downloads,ERROR   ,ROLL  : GE        : from nan to 201912
+20161203 05:26:01PM,Downloads,ERROR   ,SELL    : GE        : Sell 1 contracts
+20161203 05:26:01PM,Downloads,ERROR   ,ROLL  : NG        : from 201701 to 201702
+20161203 05:26:01PM,Downloads,ERROR   ,BUY    : ZT        : Buy 1 contracts
+20161203 05:26:01PM,Downloads,ERROR   ,SELL    : V2TX      : Sell 1 contracts
+20161203 05:26:01PM,Downloads,ERROR   ,BUY    : ZW        : Buy 1 contracts
+20161203 05:31:26PM,Downloads,INFO    ,OK  : GBM       : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : HG        : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : ZC        : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : EUR       : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : GC        : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : JPY       : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : FLKTB     : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : 3KTB      : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : LE        : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : MXP       : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : ZS        : Position is OK
+20161203 05:31:26PM,Downloads,INFO    ,OK  : VIX       : Position is OK
+20161203 05:31:26PM,Downloads,ERROR   ,'float' object has no attribute 'isNull'
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 157, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 130, in main
+    if tuple.MATURITY != tuple.EXPIRY and not tuple.EXPIRY.isNull():
+AttributeError: 'float' object has no attribute 'isNull'
+20161203 05:38:14PM,Downloads,INFO    ,OK  : GBM       : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : HG        : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : ZC        : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : EUR       : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : GC        : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : JPY       : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : FLKTB     : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : 3KTB      : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : LE        : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : MXP       : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : ZS        : Position is OK
+20161203 05:38:14PM,Downloads,INFO    ,OK  : VIX       : Position is OK
+20161203 05:38:14PM,Downloads,ERROR   ,SELL    : GE        : Sell 1 contracts
+20161203 05:38:14PM,Downloads,ERROR   ,ROLL  : NG        : from 201701 to 201702
+20161203 05:38:14PM,Downloads,ERROR   ,BUY    : ZT        : Buy 1 contracts
+20161203 05:38:14PM,Downloads,ERROR   ,SELL    : V2TX      : Sell 1 contracts
+20161203 05:38:14PM,Downloads,ERROR   ,BUY    : ZW        : Buy 1 contracts
+20161203 05:38:57PM,Downloads,INFO    ,OK  : GBM       : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : HG        : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : ZC        : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : EUR       : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : GC        : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : JPY       : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : FLKTB     : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : 3KTB      : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : HE        : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : LE        : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : MXP       : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : ZS        : Position is OK
+20161203 05:38:57PM,Downloads,INFO    ,OK  : VIX       : Position is OK
+20161203 05:38:57PM,Downloads,ERROR   ,SELL   : GE        : Sell 1 contracts
+20161203 05:38:57PM,Downloads,ERROR   ,ROLL  : NG        : from 201701 to 201702
+20161203 05:38:57PM,Downloads,ERROR   ,BUY    : ZT        : Buy 1 contracts
+20161203 05:38:57PM,Downloads,ERROR   ,SELL   : V2TX      : Sell 1 contracts
+20161203 05:38:57PM,Downloads,ERROR   ,BUY    : ZW        : Buy 1 contracts
+20161203 05:40:09PM,Downloads,INFO    ,OK        : GBM       : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : ZC        : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : JPY       : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : FLKTB     : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : 3KTB      : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : HE        : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : LE        : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : MXP       : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : ZS        : Position is OK
+20161203 05:40:09PM,Downloads,INFO    ,OK        : VIX       : Position is OK
+20161203 05:40:09PM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161203 05:40:09PM,Downloads,ERROR   ,ROLL      : NG        : from 201701 to 201702
+20161203 05:40:09PM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
+20161203 05:40:09PM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
+20161203 05:40:09PM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts
+20161203 05:42:01PM,Downloads,DEBUG   ,
+20161203 05:42:01PM,Downloads,INFO    ,OK        : GBM       : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : ZC        : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : JPY       : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : FLKTB     : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : 3KTB      : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : HE        : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : LE        : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : MXP       : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : ZS        : Position is OK
+20161203 05:42:01PM,Downloads,INFO    ,OK        : VIX       : Position is OK
+20161203 05:42:01PM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161203 05:42:01PM,Downloads,ERROR   ,ROLL      : NG        : from 201701 to 201702
+20161203 05:42:01PM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
+20161203 05:42:01PM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
+20161203 05:42:01PM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts
+20161203 09:08:17PM,Downloads,DEBUG   ,
+20161203 09:08:17PM,Downloads,INFO    ,OK        : GBM       : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : ZC        : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : NG        : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : JPY       : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : FLKTB     : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : 3KTB      : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : HE        : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : LE        : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : MXP       : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : ZS        : Position is OK
+20161203 09:08:17PM,Downloads,INFO    ,OK        : VIX       : Position is OK
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : GBM       : from 201712 to 201703
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : HG        : from 201712 to 201703
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : GE        : from 201712 to 201912
+20161203 09:08:17PM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : EUR       : from 201712 to 201612
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : NG        : from 201712 to 201702
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : GC        : from 201712 to 201612
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : JPY       : from 201712 to 201612
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : FLKTB     : from 201712 to 201612
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : 3KTB      : from 201712 to 201612
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : HE        : from 201712 to 201706
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : LE        : from 201712 to 201710
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : MXP       : from 201712 to 201612
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : ZS        : from 201712 to 201711
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : ZT        : from 201712 to 201703
+20161203 09:08:17PM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : V2TX      : from 201712 to 201701
+20161203 09:08:17PM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
+20161203 09:08:17PM,Downloads,ERROR   ,ROLL      : VIX       : from 201712 to 201701
+20161203 09:08:17PM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts
+20161203 09:10:22PM,Downloads,DEBUG   ,
+20161203 09:10:22PM,Downloads,INFO    ,OK        : GBM       : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : ZC        : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : NG        : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : JPY       : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : FLKTB     : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : 3KTB      : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : HE        : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : LE        : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : MXP       : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : ZS        : Position is OK
+20161203 09:10:22PM,Downloads,INFO    ,OK        : VIX       : Position is OK
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : GBM       : from 201712 to 201703
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : HG        : from 201712 to 201703
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : GE        : from 201712 to 201912
+20161203 09:10:22PM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : EUR       : from 201712 to 201612
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : NG        : from 201712 to 201702
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : GC        : from 201712 to 201612
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : JPY       : from 201712 to 201612
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : FLKTB     : from 201712 to 201612
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : 3KTB      : from 201712 to 201612
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : HE        : from 201712 to 201706
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : LE        : from 201712 to 201710
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : MXP       : from 201712 to 201612
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : ZS        : from 201712 to 201711
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : ZT        : from 201712 to 201703
+20161203 09:10:22PM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : V2TX      : from 201712 to 201701
+20161203 09:10:22PM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
+20161203 09:10:22PM,Downloads,ERROR   ,ROLL      : VIX       : from 201712 to 201701
+20161203 09:10:22PM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts
+20161203 09:12:06PM,Downloads,DEBUG   ,
+20161203 09:12:06PM,Downloads,INFO    ,OK        : GBM       : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : ZC        : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : NG        : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : JPY       : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : FLKTB     : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : 3KTB      : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : HE        : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : LE        : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : MXP       : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : ZS        : Position is OK
+20161203 09:12:06PM,Downloads,INFO    ,OK        : VIX       : Position is OK
+20161203 09:12:06PM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161203 09:12:06PM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
+20161203 09:12:06PM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
+20161203 09:12:06PM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts
+20161203 09:18:43PM,Downloads,ERROR   ,No module named 'wrapper_v5'
+Traceback (most recent call last):
+  File "get_portfolio.py", line 176, in <module>
+    main()
+  File "get_portfolio.py", line 38, in main
+    from wrapper_v5 import IBWrapper, IBclient
+ImportError: No module named 'wrapper_v5'
+20161203 10:13:08PM,Downloads,DEBUG   ,
+20161203 10:13:08PM,Downloads,ERROR   ,'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 140, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 91, in main
+    date = datetime(int(tuple.EXPIRY[:4]), int(tuple.EXPIRY[4:6]),1)
+TypeError: 'float' object is not subscriptable
+20161203 10:15:42PM,Downloads,DEBUG   ,
+20161203 10:15:42PM,Downloads,ERROR   ,'float' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 141, in <module>
+    main()
+  File "/home/pete/Documents/Python Packages/sysIB/private/data/tests/get_portfolio.py", line 92, in main
+    date = datetime(int(tuple.EXPIRY[:4]), int(tuple.EXPIRY[4:6]),1)
+TypeError: 'float' object is not subscriptable
+20161203 10:17:03PM,Downloads,DEBUG   ,
+20161203 10:17:03PM,Downloads,INFO    ,OK        : GBM       : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : ZC        : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : NG        : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : JPY       : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : FLKTB     : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : 3KTB      : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : HE        : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : LE        : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : MXP       : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : ZS        : Position is OK
+20161203 10:17:03PM,Downloads,INFO    ,OK        : VIX       : Position is OK
+20161203 10:17:03PM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161203 10:17:03PM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
+20161203 10:17:03PM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
+20161203 10:17:03PM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts
+20161203 10:17:54PM,Downloads,DEBUG   ,
+20161203 10:17:54PM,Downloads,INFO    ,OK        : GBM       : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : ZC        : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : NG        : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : JPY       : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : FLKTB     : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : 3KTB      : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : HE        : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : LE        : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : MXP       : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : ZS        : Position is OK
+20161203 10:17:54PM,Downloads,INFO    ,OK        : VIX       : Position is OK
+20161203 10:17:54PM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161203 10:17:54PM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
+20161203 10:17:54PM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
+20161203 10:17:54PM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts
+20161203 10:18:28PM,Downloads,DEBUG   ,
+20161203 10:18:28PM,Downloads,INFO    ,OK        : GBM       : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : ZC        : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : NG        : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : JPY       : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : FLKTB     : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : 3KTB      : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : HE        : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : LE        : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : MXP       : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : ZS        : Position is OK
+20161203 10:18:28PM,Downloads,INFO    ,OK        : VIX       : Position is OK
+20161203 10:18:28PM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161203 10:18:28PM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
+20161203 10:18:28PM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
+20161203 10:18:28PM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts
+20161203 10:34:16PM,Downloads,DEBUG   ,
+20161203 10:34:16PM,Downloads,INFO    ,OK        : GBM       : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : ZC        : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : NG        : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : JPY       : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : FLKTB     : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : 3KTB      : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : HE        : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : LE        : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : MXP       : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : ZS        : Position is OK
+20161203 10:34:16PM,Downloads,INFO    ,OK        : VIX       : Position is OK
+20161203 10:34:16PM,Downloads,DEBUG   ,
+20161203 10:34:16PM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161203 10:34:16PM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
+20161203 10:34:16PM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
+20161203 10:34:16PM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts
+20161204 12:42:00AM,Downloads,DEBUG   ,
+20161204 12:42:00AM,Downloads,INFO    ,OK        : GBM       : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : ZC        : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : NG        : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : JPY       : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : FLKTB     : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : 3KTB      : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : HE        : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : LE        : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : MXP       : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : ZS        : Position is OK
+20161204 12:42:00AM,Downloads,INFO    ,OK        : VIX       : Position is OK
+20161204 12:42:00AM,Downloads,DEBUG   ,
+20161204 12:42:00AM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161204 12:42:00AM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
+20161204 12:42:00AM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
+20161204 12:42:00AM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts

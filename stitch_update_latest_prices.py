@@ -105,79 +105,11 @@ def updateMarket(market):
     else:
         print("Cannot open file ", fPriceFile)
         #Needs to be put in
-'''
 
-def updateFX(market):
+markets = ["V2X","GAS_US","VIX","CAC","GOLD", "US2", "US5","EDOLLAR","MXP","CORN","EUROSTX","PLAT","LEANHOG","GBP","COPPER","CRUDE_W","BOBL","WHEAT","JPY","NASDAQ","SOYBEAN","AUD","SP500","PALLAD","LIVECOW"]
 
-    # Read fxdata to check
-    # 1. For each rate check for new data
-    # 2. Access source file and add corresponding rows.
-    # Report if no new data... or any other erros
-    path = '/home/pete/Documents/IBDocs/'
-    legacyPath = "/home/pete/pysystemtrade/sysdata/legacycsv/"
-    today = time.strftime("%Y%m%d")
-    errorFile = path + 'Logs/' + today + "download_errors" + ".txt"
-
-    dataFilename = path + 'fxdata.csv'
-    print("dataFilename: ", dataFilename)
-    mdf = pd.read_csv(dataFilename)
-    print(mdf)
-
-    #
-    row = mdf.loc[mdf['CAVER'] == market]
-    print("row: ", row)
-    # Get corresponding fx rate file...
-
-    ratePair = row.iloc[0]['CAVER']
-    print("ratePair: ", ratePair)
-
-    fxRateFile = legacyPath + ratePair + 'fx.csv'
-
-    print("fxRateFile: ", fxRateFile)
-    fxRateDF = pd.read_csv(fxRateFile)
-    fxRateDF = fxRateDF.set_index('DATETIME').copy()
-    lastFXRate = fxRateDF.iloc[-1:].index[0]
-    print("lastFXRate: ", lastFXRate)
-
-    # Now append any new lines...
-
-    # Read and check Price maturity download File and append any new lines to priceDF and overwrite existing file....
-
-    fFXFile = path + ratePair + '/' + ratePair + '.csv'
-    print("== Checking if there is new updates for: ", fFXFile)
-    if os.path.isfile(fFXFile):
-        sourceFXDF = pd.read_csv(fFXFile, usecols=[0, 1])
-        # Doew sourceFXDF contains newer rows?
-        sourceFXDF.columns = ['DATETIME', 'FX']
-        newFXDF = sourceFXDF.set_index('DATETIME').copy()
-        newFXDF = newFXDF.loc[lastFXRate:][1:]
-        if newFXDF.empty:
-            print(market, ": Data is up to date...", lastFXRate)
-            return
-        print(newFXDF)
-        print("****************************************")
-
-        fxRateDF = (fxRateDF).append(newFXDF)
-        print(fxRateDF)  # updated dataFrame
-        fxRateDF.to_csv(fxRateFile)
-        print("== Now updating FX Rate ", market," =======================================")
-    else:
-        print("Cannot open file ", fFXFile)
-
-
-
-
-
-'''
-
-markets = ["V2X","GAS_US","VIX","CAC","GOLD", "US2", "US5"]
-#markets = ["CAC"]
-# fxmarkets = ["GBPUSD", "KRWUSD", "EURUSD"]
- #markets = ["AUD"]
 
 
 for market in markets:
     updateMarket (market)
 
-#for market in fxmarkets:
-#    updateFX(market)

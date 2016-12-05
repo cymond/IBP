@@ -5,7 +5,7 @@ from swigibpy import EPosixClientSocket, ExecutionFilter
 from swigibpy import Order as IBOrder
 from IButils import bs_resolve, action_ib_fill
 
-MAX_WAIT_SECONDS=10
+MAX_WAIT_SECONDS=30
 MEANINGLESS_NUMBER=1830
 
 

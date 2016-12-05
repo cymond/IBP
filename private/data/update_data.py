@@ -25,7 +25,6 @@ def updateFuturesMarket(market):
     priceMaturity = row.iloc[0]['PRICE']
     carryMaturity = carryMaturity[0:6] # market_data file requires VIX maturity in 8 digit form but file uses 6 digits!
     priceMaturity = priceMaturity[0:6] # market_data file requires VIX maturity in 8 digit form but file uses 6 digits!
-    symbolIB = row.iloc[0]['IB']
     print("Carry Maturity: ", carryMaturity)
     print("Price Maturity: ", priceMaturity)
     #!!!!
@@ -33,16 +32,24 @@ def updateFuturesMarket(market):
 
     # From the current PRICE and CARRY files get the last dates updated...
 
-    price_file = destination_path + market + '_price.csv'
-    carry_file = destination_path + market + '_carrydata.csv'
-    price_df = pd.read_csv(price_file)
-    carry_df = pd.read_csv(carry_file,dtype={'CARRY_CONTRACT': str, 'PRICE_CONTRACT': str})
-    price_df = price_df.set_index('DATETIME').copy()
-    carry_df = carry_df.set_index('DATETIME').copy()
-    latest_price_date = price_df.iloc[-1:].index[0]
-    latest_carry_date = carry_df.iloc[-1:].index[0]
+    legacy_price_file = legacy_path + market + '_price.csv'
+    legacy_carry_file = legacy_path + market + '_carrydata.csv'
+    legacy_price_df = pd.read_csv(legacy_price_file)
+    legacy_carry_df = pd.read_csv(legacy_carry_file,dtype={'CARRY_CONTRACT': str, 'PRICE_CONTRACT': str})
+    legacy_price_df = legacy_price_df.set_index('DATETIME').copy()
+    legacy_carry_df = legacy_carry_df.set_index('DATETIME').copy()
+    latest_price_date = legacy_price_df.iloc[-1:].index[0]
+    latest_carry_date = legacy_carry_df.iloc[-1:].index[0]
+    if latest_price_date != latest_carry_date:
+        lineString = time_now + "," + "E" + "," + market + "," + "Price and Carry legacy files different lengths!"
+        print("============================================================")
+        print("PRICE and CARRY files different dates!")
+        print("============================================================")
+        errorFileHandle = open(error_filename, 'a')
+        errorFileHandle.write(lineString)  # python will convert \n to os.linesep
+        errorFileHandle.close()
 
-    # !!!! Test
+        # !!!! Test
     print("latest price date: ", latest_price_date)
     print("latest carry date: ", latest_carry_date)
     # !!!!
@@ -50,14 +57,14 @@ def updateFuturesMarket(market):
     print("== Processing Price Series =======================================")
     # If downloaded PRICE  has any new data rows, append them to price_df and then overwrite existing file....
 
-    downloaded_price_file = source_path + 'downloads/' + market + '/' + priceMaturity + '.csv'
+    downloaded_price_file = newdata_path + 'downloads/quandl/' + market + '/' + priceMaturity + '.csv'
     if not(os.path.isfile(downloaded_price_file)):  # If the File does not exist or can't be opened, report an error!!!!
         # MUST be reported error... processing can proceed with next market
 
         print("Cannot open file ", downloaded_price_file)
         # Record in the error file
 
-        lineString = time_now + "," + "E" + "," + "Cannot open file: " + "," + downloaded_price_file
+        lineString = time_now + "," + "E" + "," + market + "," + "Cannot open file: " + "," + downloaded_price_file
         print("============================================================")
         print(downloaded_price_file + "File opening error!!!")
         print("============================================================")
@@ -73,7 +80,7 @@ def updateFuturesMarket(market):
         latest_prices_df = latest_prices_df.loc[latest_price_date:][1:]
         if latest_prices_df.empty:
             print(market, ": Data is up to date...", latest_price_date)
-            lineString = time_now + "," + "W" + ","+ downloaded_price_file + ", is up to date!"
+            lineString = time_now + "," + "W" + "," + market + "," + "Data is up to date!"
             errorFileHandle = open(error_filename, 'a')
             errorFileHandle.write(lineString)  # python will convert \n to os.linesep
             errorFileHandle.close()  # you can omit in most cases as the destructor will call it
@@ -81,18 +88,20 @@ def updateFuturesMarket(market):
 
         print("Now adding the following PRICE row/s....****************************************")
         print(latest_prices_df)
+        row_count = len(latest_prices_df)
 
-        price_df = (price_df).append(latest_prices_df)
-        print(price_df) # updated dataFrame
-        print("Writing to file: ", price_file)
-        price_df.to_csv(price_file)
+        legacy_price_df = (legacy_price_df).append(latest_prices_df)
+        print(legacy_price_df) # updated dataFrame
+        print("Writing " + str(row_count) + " rows to file: ", legacy_price_file)
+        legacy_price_df.to_csv(legacy_price_file)
         print()
 
         print("== Now processing the CARRY File =======================================")
         # Create dataframe to write back to carry file
         # Check for Carry maturity
-
-        downloaded_carry_file = source_path + 'downloads/' + market + '/' + carryMaturity + '.csv'
+        latest_prices_df = downloaded_price_df.set_index('DATETIME').copy()
+        latest_prices_df = latest_prices_df.loc[latest_carry_date:][1:]  # from date of last CARRRY row!
+        downloaded_carry_file = newdata_path + 'downloads/quandl/' + market + '/' + carryMaturity + '.csv'
         if not(os.path.isfile(downloaded_carry_file)):
             print("No CARRY file...")
             # However, we still need to create new CARRY FILE rows with PRICE and blanks in CARRY column!
@@ -104,20 +113,18 @@ def updateFuturesMarket(market):
             errorFileHandle = open(error_filename, 'a')
             errorFileHandle.write(lineString)  # python will convert \n to os.linesep
             errorFileHandle.close()  # you can omit in most cases as the destructor will call it
-
-            latest_prices_df = downloaded_price_df.set_index('DATETIME').copy()
-            latest_prices_df = latest_prices_df.loc[latest_carry_date:][1:] # from date of last CARRRY row!
             dfConcat = latest_prices_df
+            row_count = len(latest_prices_df)
             dfConcat.columns = ["PRICE"]
             dfConcat["CARRY"] = ""
             dfConcat["CARRY_CONTRACT"] = carryMaturity
             dfConcat["PRICE_CONTRACT"] = priceMaturity
             print(dfConcat)
-            print(carry_df)
-            carry_df = (carry_df).append(dfConcat)
-            print(carry_df)
-            carry_df.to_csv(carry_file)
-        else:
+            legacy_carry_df = (legacy_carry_df).append(dfConcat)
+            print(legacy_carry_df)
+            print("Writing " + str(row_count) + " rows to file: ", legacy_carry_file)
+            legacy_carry_df.to_csv(legacy_carry_file)
+        else: # A carry file exists
             downloaded_carry_df = pd.read_csv(downloaded_carry_file, usecols=[0, 1])
             # Check if sourceCarryDF contains newer rows...
             downloaded_carry_df.columns = ['DATETIME', 'PRICE']
@@ -134,36 +141,24 @@ def updateFuturesMarket(market):
                 errorFileHandle = open(error_filename, 'a')
                 errorFileHandle.write(lineString)  # python will convert \n to os.linesep
                 errorFileHandle.close()  # you can omit in most cases as the destructor will call it
-
-                latest_prices_df = downloaded_price_df.set_index('DATETIME').copy()
-                latest_prices_df = latest_prices_df.loc[latest_carry_date:][1:]  # from date of last CARRRY row!
                 dfConcat = latest_prices_df
                 dfConcat.columns = ["PRICE"]
                 dfConcat["CARRY"] = ""
-                dfConcat["CARRY_CONTRACT"] = carryMaturity
-                dfConcat["PRICE_CONTRACT"] = priceMaturity
-                print(dfConcat)
-                print(carry_df)
-                carry_df = (carry_df).append(dfConcat)
-                print(carry_df)
-                carry_df.to_csv(carry_file)
             else:
                 print("Now adding the following CARRY row/s ****************************************")
                 print(latest_carry_df)
-
                 dfConcat = pd.concat([latest_prices_df, latest_carry_df], axis=1)
-                dfConcat.columns = ["PRICE", "CARRY"]
-                dfConcat["CARRY_CONTRACT"] = carryMaturity
-                dfConcat["PRICE_CONTRACT"] = priceMaturity
-                #dfConcat.index.names = ["DATETIME"]
-                print(dfConcat)
-                print(carry_df)
-                carry_df = (carry_df).append(dfConcat)
-                print(carry_df)
-                print("Writing to file: ", carry_file)
-                carry_df.to_csv(carry_file)
-                print("== End processing for ", market, " =======================================")
-                print()
+            dfConcat.columns = ["PRICE", "CARRY"]
+            dfConcat["CARRY_CONTRACT"] = carryMaturity
+            dfConcat["PRICE_CONTRACT"] = priceMaturity
+            #dfConcat.index.names = ["DATETIME"]
+            print(dfConcat)
+            legacy_carry_df = (legacy_carry_df).append(dfConcat)
+            print(legacy_carry_df)
+            print("Writing to file: ", legacy_carry_file)
+            legacy_carry_df.to_csv(legacy_carry_file)
+            print("== End processing for ", market, " =======================================")
+            print()
 
 
 def updateFXRate(market):
@@ -186,7 +181,7 @@ def updateFXRate(market):
     ratePair = row.iloc[0]['CAVER']
     print("ratePair: ", ratePair)
 
-    fx_rate_file = destination_path + ratePair + 'fx.csv'
+    fx_rate_file = legacy_path + ratePair + 'fx.csv'
 
     print("fxRateFile: ", fx_rate_file)
     fx_rate_df = pd.read_csv(fx_rate_file)
@@ -198,7 +193,7 @@ def updateFXRate(market):
 
     # Read and check Price maturity download File and append any new lines to priceDF and overwrite existing file....
 
-    downloaded_fx_file = source_path + 'downloads/' + ratePair + '/' + ratePair + '.csv'
+    downloaded_fx_file = newdata_path + 'downloads/quandl/' + ratePair + '/' + ratePair + '.csv'
     print("== Checking if there is new updates for: ", downloaded_fx_file)
     if not(os.path.isfile(downloaded_fx_file)):
         print("Cannot open file ", downloaded_fx_file)
@@ -251,14 +246,14 @@ if __name__=="__main__":
 
     dir_filename = "../data/admin/directories.csv"
     df = pd.read_csv(dir_filename, index_col=['DIRECTION'], dtype={'PATH': str})
-    source_path = df.loc['SOURCE'][0]
-    destination_path = df.loc['DESTINATION'][0]
+    newdata_path = df.loc['SOURCE'][0]
+    legacy_path = df.loc['DESTINATION'][0]
 
     today = time.strftime("%Y%m%d")
     time_now = time.strftime("%Y%m%d %H:%M:%S")
 
-    error_filename = source_path + 'logs/' + today + "download_errors" + ".txt"
-    data_filename = source_path + 'admin/' + 'marketdata.csv'
+    error_filename = newdata_path + 'logs/' + today + "download_errors" + ".txt"
+    data_filename = newdata_path + 'admin/' + 'marketdata.csv'
 
     market_data_df = pd.read_csv(data_filename, dtype={'CARRY': str, 'PRICE': str})
 

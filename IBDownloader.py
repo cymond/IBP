@@ -21,14 +21,14 @@ if __name__=="__main__":
 
     dataFilename = path + 'marketdata.csv'
     mdf = pd.read_csv(dataFilename)
-    print(mdf)
+    #print(mdf)
     counter = 100
 
     for row in mdf.itertuples():
-        print()
-        print(row)
-        print()
-        print("row[6]:", row[6], " row[7]: ", row[7])
+        #print()
+        #print(row)
+        #print()
+        #print("row[6]:", row[6], " row[7]: ", row[7])
         print()
         counter = counter + 1
         subPath = path + row[1] + '/'
@@ -46,20 +46,20 @@ if __name__=="__main__":
         for mat in collection:
 
             ibcontract.expiry = str(mat)  # CARRY
-            print()
-            print("retrieving.... " + row[2] + " / " + str(mat) )
-            ans = client.get_IB_historical_data(ibcontract, "1 M", "1 day", counter)
+            #print()
+            #print("retrieving.... " + row[2] + " / " + str(mat) )
+            ans = client.get_IB_historical_data(ibcontract, "3 M", "1 day", counter)
             if isinstance(ans, pd.DataFrame):
                 fileName = subPath + str(mat)[0:6] + ".csv"
                 ans.to_csv(fileName)
-                print()
-                print(ans)
+                print(row[1], '/',str(mat))
+                print(ans.tail(1))
                 print("Saving to file: " + str(counter) + ": " + fileName)
                 print()
             else:
                 lineString = time_now + "," + row[1] + "," + row[2] + "," + str(mat) + "\n"
-                print("============================================================")
-                print("Symbol: " + row[2] + " / " + str(mat) + " errored!!!!!!")
+                #print("============================================================")
+                print(row[1] + " / " + str(mat) + " errored!!!!!!")
                 print("============================================================")
                 errorFileHandle = open(errorFile, 'a')
                 errorFileHandle.write(lineString)  # python will convert \n to os.linesep

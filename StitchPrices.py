@@ -19,7 +19,7 @@ errorFile = source_path + 'Logs/' + today + "download_errors" + ".txt"
 
 def get_stitch_row(symbol):
     # Read the file containg the stitch dates and handles for new maturities
-    stitchFile = path + "stitchdata.csv"
+    stitchFile = source_path + "stitchdata.csv"
     if os.path.isfile(stitchFile):
         stichDF = pd.read_csv(stitchFile)
         row = stichDF.loc[stichDF['CARVER'] == symbol]
@@ -86,9 +86,9 @@ def get_stitched_Price( stitchdate, newCarryContract, newPriceContract):
     return
 
 
-market = 'GOLD'
+market = 'VIX'
 stitchRow = get_stitch_row(market)
-newPricePath = path + market + '/'
+newPricePath = source_path + market + '/'
 
 stitchDate = stitchRow.iloc[0]['DATETIME']
 newCarryContract = stitchRow.iloc[0]['CARRY_CONTRACT']
