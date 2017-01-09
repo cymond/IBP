@@ -1,0 +1,9 @@
+20161225 06:49:06PM,Downloads,INFO    ,SPLICING  : GAS_US    : Quandl and IB PRICE download files DO NOT match
+20161225 06:49:06PM,Downloads,INFO    ,SPLICING  : GAS_US    : Using Quandl PRICE download files to splice
+20161225 06:49:06PM,Downloads,INFO    ,SPLICING  : GAS_US    : Stitched PRICE saved to file GAS_US_price.csv
+20161225 06:49:06PM,Downloads,INFO    ,SPLICING  : GAS_US    : Stitched CARRY saved to file GAS_US_carrydata.csv
+20170101 11:40:19PM,Downloads,ERROR   ,SPLICING  : PLAT      , stitch date 2016-12-31 00:00:00, not in legacy PICE file
+20170101 11:46:22PM,Downloads,INFO    ,SPLICING  : PLAT      : Quandl and IB PRICE download files match
+20170101 11:46:22PM,Downloads,INFO    ,SPLICING  : PLAT      : Using Quandl PRICE download files to splice
+20170101 11:46:22PM,Downloads,INFO    ,SPLICING  : PLAT      : Stitched PRICE saved to file PLAT_price.csv
+20170101 11:46:23PM,Downloads,INFO    ,SPLICING  : PLAT      : Stitched CARRY saved to file PLAT_carrydata.csv

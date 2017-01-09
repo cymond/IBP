@@ -932,3 +932,47 @@ TypeError: 'float' object is not subscriptable
 20161204 12:42:00AM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
 20161204 12:42:00AM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
 20161204 12:42:00AM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts
+20161205 01:36:39AM,Downloads,DEBUG   ,
+20161205 01:36:39AM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161205 01:36:39AM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161205 01:36:39AM,Downloads,INFO    ,OK        : NG        : Position is OK
+20161205 01:36:39AM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161205 01:36:39AM,Downloads,INFO    ,OK        : ZT        : Position is OK
+20161205 01:36:39AM,Downloads,DEBUG   ,
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : GBM       : Sell 2 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : GBL       : Sell 1 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : ZC        : Sell 2 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : JPY       : Sell 2 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : FLKTB     : Sell 1 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : 3KTB      : Sell 1 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : HE        : Sell 1 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : LE        : Sell 1 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : MXP       : Sell 1 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,BUY       : PA        : Buy 1 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : PL        : Sell 1 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,BUY       : ZS        : Buy 3 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : ZB        : Sell 1 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : V2TX      : Sell 10 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : VIX       : Sell 2 contracts
+20161205 01:36:39AM,Downloads,ERROR   ,SELL      : ZW        : Sell 4 contracts
+20161205 01:51:56AM,Downloads,DEBUG   ,
+20161205 01:51:56AM,Downloads,INFO    ,OK        : GBM       : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : HG        : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : ZC        : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : EUR       : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : NG        : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : GC        : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : JPY       : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : FLKTB     : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : 3KTB      : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : HE        : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : LE        : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : MXP       : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : ZS        : Position is OK
+20161205 01:51:56AM,Downloads,INFO    ,OK        : VIX       : Position is OK
+20161205 01:51:56AM,Downloads,DEBUG   ,
+20161205 01:51:56AM,Downloads,ERROR   ,SELL      : GE        : Sell 1 contracts
+20161205 01:51:56AM,Downloads,ERROR   ,BUY       : ZT        : Buy 1 contracts
+20161205 01:51:56AM,Downloads,ERROR   ,SELL      : V2TX      : Sell 1 contracts
+20161205 01:51:56AM,Downloads,ERROR   ,BUY       : ZW        : Buy 1 contracts

@@ -19,7 +19,7 @@ def return_IB_connection_info():
    
     host=""
    
-    port=4001
+    port=7496
     clientid=999
    
     return (host, port, clientid)
@@ -369,8 +369,10 @@ class IBclient(object):
         if orderid is None:
             print("Getting orderid from IB")
             orderid=self.get_next_brokerorderid()
-            
-        print("Using order id of %d" % orderid)
+
+        print(type(orderid))
+        print(orderid)
+#        print("Using order id of %d" % orderid)
     
          # Place the order
         self.tws.placeOrder(

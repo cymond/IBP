@@ -15,25 +15,26 @@ if __name__=="__main__":
     ibcontract.expiry="201612"
     ibcontract.symbol="GE"
     ibcontract.exchange="GLOBEX"
-
+    '''
     ibcontract = IBcontract()
     ibcontract.secType = "FUT"
     ibcontract.expiry = "201612"
     ibcontract.symbol = "GE"
     ibcontract.exchange = "GLOBEX"
-
+    '''
     ibcontract = IBcontract()
     ibcontract.secType = "FUT"
-    ibcontract.expiry = "201609"
+    ibcontract.expiry = "201703"
     ibcontract.currency = "GBP"
     ibcontract.symbol = "R"
     ibcontract.exchange = "ICEEU"
-     '''
+
     ibcontract = IBcontract()
     ibcontract.secType = "CASH"
     ibcontract.currency = "USD"
     ibcontract.symbol = "EUR"
     ibcontract.exchange = "IDEALPRO"
+    '''
 
     ans=client.get_IB_market_data(ibcontract)
     print("Bid size, Ask size; Bid price; Ask price")

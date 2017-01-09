@@ -26,7 +26,7 @@ if __name__=="__main__":
     """
     ibcontract = IBcontract()
     ibcontract.secType = "FUT"
-    ibcontract.expiry = "201612"
+    ibcontract.expiry = "201712"
     ibcontract.symbol = "GE"
     ibcontract.exchange = "GLOBEX"
 
@@ -37,11 +37,11 @@ if __name__=="__main__":
     ## In particular we want the expiry. You cannot just use cdetails['expiry'][:6] to map back to the yyyymm 
     ##    expiry since certain contracts expire the month before they should!
     
-    print("Expiry is %s" % cdetails['expiry'])
+#    print("Expiry is %s" % cdetails['expiry'])
 
     ## Place the order, asking IB to tell us what the next order id is
     ## Note limit price of zero
-    orderid1=client.place_new_IB_order(ibcontract, 10, 0.0, "MKT", orderid=None)
+    orderid1=client.place_new_IB_order(ibcontract, 6, 10, "LMT", orderid=None)
     
     print ("")
     print ("Placed market order, orderid is %d" % orderid1)

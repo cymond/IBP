@@ -22,8 +22,8 @@ st_table.add("FTSE", "FTSE 100 index")
 assert st_table.read("FTSE")=="FTSE 100 index"
 st_table.modify("FTSE", "FTSE all share")
 assert st_table.read("FTSE")=="FTSE all share"
-st_table.delete("FTSE")
-assert st_table.read("FTSE") is None
+#st_table.delete("FTSE")
+#assert st_table.read("FTSE") is None
 
 
 dt_table=tsdata(dbname)
@@ -35,6 +35,6 @@ dt_table.add("FTSE", somprices)
 assert dt_table.read("FTSE").values[-1]==99.0
 
 ## Remove the file so example is clean next time
-os.remove(dbfilename)
+#os.remove(dbfilename)
 
-print("No problems")
+print("Yes No problems")

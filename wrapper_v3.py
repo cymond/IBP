@@ -226,6 +226,7 @@ class IBclient(object):
 
         
         while not finished and not iserror:
+
             iserror=self.cb.flag_iserror
             if (time.time() - start_time) > seconds:
                 print("We timed out....")
@@ -239,7 +240,7 @@ class IBclient(object):
         
         
         if iserror:
-            print("Error: "+self.cb.error_msg)
+            print("Error: ", self.cb.error_msg)
             print("Failed to get any prices with marketdata")
         
         return marketdata
