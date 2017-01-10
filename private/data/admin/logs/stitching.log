@@ -7,3 +7,7 @@
 20170101 11:46:22PM,Downloads,INFO    ,SPLICING  : PLAT      : Using Quandl PRICE download files to splice
 20170101 11:46:22PM,Downloads,INFO    ,SPLICING  : PLAT      : Stitched PRICE saved to file PLAT_price.csv
 20170101 11:46:23PM,Downloads,INFO    ,SPLICING  : PLAT      : Stitched CARRY saved to file PLAT_carrydata.csv
+20170110 12:18:15AM,Downloads,WARNING ,SPLICING  : AEX       , No match for stitch date 2017-01-09 00:00:00, in IB PICE file
+20170110 12:18:15AM,Downloads,INFO    ,SPLICING  : AEX       : Using Quandl PRICE download files to splice
+20170110 12:18:15AM,Downloads,INFO    ,SPLICING  : AEX       : Stitched PRICE saved to file AEX_price.csv
+20170110 12:18:15AM,Downloads,INFO    ,SPLICING  : AEX       : Stitched CARRY saved to file AEX_carrydata.csv
