@@ -1978,3 +1978,81 @@ TypeError: 'NoneType' object is not iterable
 20170112 09:44:05AM,Downloads,ERROR   ,BUY       : HE    201706: Buy 1 contracts
 20170112 09:44:05AM,Downloads,ERROR   ,ROLL      : V2TX      : from 201703 to 201702
 20170112 09:44:05AM,Downloads,ERROR   ,ROLL      : VIX       : from 201703 to 201702
+20170113 12:51:05AM,Downloads,DEBUG   ,
+20170113 12:51:05AM,Downloads,INFO    ,OK        : GBM   : 201703: 2  : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : BTP   : 201703: 1  : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : ZC    : 201712: -2 : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : GE    : 201912: -1 : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : NG    : 201703: -1 : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : GBP   : 201703: -1 : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : JPY   : 201703: -1 : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : K200  : 201703: 1  : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : FLKTB : 201703: -1 : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : HE    : 201706: 2  : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : MXP   : 201703: -3 : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : NQ    : 201703: 1  : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : ZS    : 201711: 1  : Position is OK
+20170113 12:51:05AM,Downloads,INFO    ,OK        : ZW    : 201712: -4 : Position is OK
+20170113 12:51:05AM,Downloads,DEBUG   ,
+20170113 12:51:05AM,Downloads,ERROR   ,SELL      : CAC40 201702: Sell 1 contracts
+20170113 12:51:05AM,Downloads,ERROR   ,SELL      : 3KTB  201703: Sell 2 contracts
+20170113 12:51:05AM,Downloads,ERROR   ,ROLL      : V2TX      : from 201703 to 201702
+20170113 12:51:05AM,Downloads,ERROR   ,ROLL      : VIX       : from 201703 to 201702
+20170113 09:01:44AM,Downloads,DEBUG   ,
+20170113 09:01:44AM,Downloads,INFO    ,OK        : GBM   : 201703: 2  : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : BTP   : 201703: 1  : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : ZC    : 201712: -2 : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : GE    : 201912: -1 : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : NG    : 201703: -1 : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : GBP   : 201703: -1 : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : JPY   : 201703: -1 : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : K200  : 201703: 1  : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : FLKTB : 201703: -1 : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : 3KTB  : 201703: -3 : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : HE    : 201706: 2  : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : MXP   : 201703: -3 : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : NQ    : 201703: 1  : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : ZS    : 201711: 1  : Position is OK
+20170113 09:01:44AM,Downloads,INFO    ,OK        : ZW    : 201712: -4 : Position is OK
+20170113 09:01:44AM,Downloads,DEBUG   ,
+20170113 09:01:44AM,Downloads,ERROR   ,SELL      : CAC40 201702: Sell 1 contracts
+20170113 09:01:44AM,Downloads,ERROR   ,BUY       : V2TX  201703: Buy 1 contracts
+20170113 09:01:44AM,Downloads,ERROR   ,BUY       : VIX   201703: Buy 1 contracts
+20170113 09:08:23AM,Downloads,DEBUG   ,
+20170113 09:08:23AM,Downloads,INFO    ,OK        : GBM   : 201703: 2  : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : BTP   : 201703: 1  : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : ZC    : 201712: -2 : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : GE    : 201912: -1 : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : NG    : 201703: -1 : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : GBP   : 201703: -1 : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : JPY   : 201703: -1 : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : K200  : 201703: 1  : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : FLKTB : 201703: -1 : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : 3KTB  : 201703: -3 : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : HE    : 201706: 2  : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : MXP   : 201703: -3 : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : NQ    : 201703: 1  : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : ZS    : 201711: 1  : Position is OK
+20170113 09:08:23AM,Downloads,INFO    ,OK        : ZW    : 201712: -4 : Position is OK
+20170113 09:08:23AM,Downloads,DEBUG   ,
+20170113 09:08:23AM,Downloads,ERROR   ,BUY       : V2TX  201703: Buy 1 contracts
+20170113 09:08:23AM,Downloads,ERROR   ,BUY       : VIX   201703: Buy 1 contracts
+20170113 02:01:37PM,Downloads,DEBUG   ,
+20170113 02:01:37PM,Downloads,INFO    ,OK        : GBM   : 201703: 2  : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : BTP   : 201703: 1  : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : ZC    : 201712: -2 : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : GE    : 201912: -1 : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : NG    : 201703: -1 : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : GBP   : 201703: -1 : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : JPY   : 201703: -1 : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : K200  : 201703: 1  : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : FLKTB : 201703: -1 : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : 3KTB  : 201703: -3 : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : HE    : 201706: 2  : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : MXP   : 201703: -3 : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : NQ    : 201703: 1  : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : ZS    : 201711: 1  : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : V2TX  : 201703: -8 : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : VIX   : 201703: -2 : Position is OK
+20170113 02:01:37PM,Downloads,INFO    ,OK        : ZW    : 201712: -4 : Position is OK
+20170113 02:01:37PM,Downloads,DEBUG   ,

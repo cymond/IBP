@@ -15,3 +15,16 @@
 20170112 07:14:21AM,Downloads,INFO    ,SPLICING  : CAC       : Using Quandl PRICE download files to splice
 20170112 07:14:21AM,Downloads,INFO    ,SPLICING  : CAC       : Stitched PRICE saved to file CAC_price.csv
 20170112 07:14:21AM,Downloads,INFO    ,SPLICING  : CAC       : Stitched CARRY saved to file CAC_carrydata.csv
+20170113 12:32:01AM,Downloads,ERROR   ,SPLICING  : V2X       , stitch date 2017-01-12 00:00:00, not in legacy PICE file
+20170113 12:32:01AM,Downloads,ERROR   ,SPLICING  : VIX       , stitch date 2017-01-12 00:00:00, not in legacy PICE file
+20170113 07:13:40AM,Downloads,ERROR   ,SPLICING  : V2X       , stitch date 2017-01-12 00:00:00, not in legacy PICE file
+20170113 07:13:40AM,Downloads,ERROR   ,SPLICING  : VIX       , stitch date 2017-01-12 00:00:00, not in legacy PICE file
+20170113 07:16:51AM,Downloads,INFO    ,SPLICING  : V2X       : Quandl and IB PRICE download files match
+20170113 07:16:52AM,Downloads,INFO    ,SPLICING  : V2X       : Using Quandl PRICE download files to splice
+20170113 07:16:52AM,Downloads,INFO    ,SPLICING  : V2X       : Stitched PRICE saved to file V2X_price.csv
+20170113 07:16:52AM,Downloads,INFO    ,SPLICING  : V2X       : Stitched CARRY saved to file V2X_carrydata.csv
+20170113 07:16:52AM,Downloads,WARNING ,SPLICING  : VIX       , No match for stitch date 2017-01-12 00:00:00, in Quandl PICE file
+20170113 07:16:52AM,Downloads,INFO    ,SPLICING  : VIX       : Using IB PRICE download files to splice
+20170113 07:16:52AM,Downloads,INFO    ,SPLICING  : VIX       : Stitched PRICE saved to file VIX_price.csv
+20170113 07:16:52AM,Downloads,INFO    ,SPLICING  : VIX       : Using IBr CARRY download files to splice
+20170113 07:16:52AM,Downloads,INFO    ,SPLICING  : VIX       : Stitched CARRY saved to file VIX_carrydata.csv

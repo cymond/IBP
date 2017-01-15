@@ -11802,3 +11802,969 @@ UnboundLocalError: local variable 'last_ib_date' referenced before assignment
 20170112 07:13:55AM,Downloads,DEBUG   ,NO NU DATA: WHEAT     : PRICE (Quandl) last: 2017-01-11
 20170112 07:13:55AM,Downloads,DEBUG   ,NO NU DATA: WHEAT     : PRICE (IB) last: 2017-01-11
 20170112 07:13:55AM,Downloads,WARNING ,NO NU DATA: WHEAT     : PRICE mat. No update...
+20170113 12:31:28AM,Downloads,DEBUG   ,
+20170113 12:31:28AM,Downloads,WARNING ,Next roll info for, AEX, missing ************************************************
+20170113 12:31:28AM,Downloads,DEBUG   ,MATURITIES: AEX       , PRICE: 201702, CARRY: 201703
+20170113 12:31:28AM,Downloads,DEBUG   ,LAST DATES: AEX       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : AEX       : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: AEX       : PRICE (IB) last: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : AEX       : PRICE mat Quandl but no IB
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : AEX       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/AEX_price.csv
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : AEX       : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: AEX       : CARRY (IB) last: 2017-01-12
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : AEX       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/AEX_carrydata.csv
+20170113 12:31:28AM,Downloads,DEBUG   ,
+20170113 12:31:28AM,Downloads,INFO    ,ROLL INFO : AUD       : (201703 to 201706) Due in (days) : 56 
+20170113 12:31:28AM,Downloads,DEBUG   ,MATURITIES: AUD       , PRICE: 201703, CARRY: 201706
+20170113 12:31:28AM,Downloads,DEBUG   ,LAST DATES: AUD       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : AUD       : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: AUD       : PRICE (IB) last: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : AUD       : PRICE mat Quandl but no IB
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : AUD       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/AUD_price.csv
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : AUD       : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: AUD       : CARRY (IB) last: 2017-01-12
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : AUD       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/AUD_carrydata.csv
+20170113 12:31:28AM,Downloads,DEBUG   ,
+20170113 12:31:28AM,Downloads,INFO    ,ROLL INFO : BOBL      : (201703 to 201706) Due in (days) : 47 
+20170113 12:31:28AM,Downloads,DEBUG   ,MATURITIES: BOBL      , PRICE: 201703, CARRY: 201706
+20170113 12:31:28AM,Downloads,DEBUG   ,LAST DATES: BOBL      , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: BOBL      : PRICE (Quandl) last: 2017-01-11
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: BOBL      : PRICE (IB) last: 2017-01-11
+20170113 12:31:28AM,Downloads,WARNING ,NO NU DATA: BOBL      : PRICE mat. No update...
+20170113 12:31:28AM,Downloads,DEBUG   ,
+20170113 12:31:28AM,Downloads,INFO    ,ROLL INFO : BTP       : (201703 to 201706) Due in (days) : 47 
+20170113 12:31:28AM,Downloads,DEBUG   ,MATURITIES: BTP       , PRICE: 201703, CARRY: 201706
+20170113 12:31:28AM,Downloads,DEBUG   ,LAST DATES: BTP       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: BTP       : PRICE (Quandl) last: 2017-01-11
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: BTP       : PRICE (IB) last: 2017-01-11
+20170113 12:31:28AM,Downloads,WARNING ,NO NU DATA: BTP       : PRICE mat. No update...
+20170113 12:31:28AM,Downloads,DEBUG   ,
+20170113 12:31:28AM,Downloads,INFO    ,ROLL INFO : BUND      : (201703 to 201706) Due in (days) : 47 
+20170113 12:31:28AM,Downloads,DEBUG   ,MATURITIES: BUND      , PRICE: 201703, CARRY: 201706
+20170113 12:31:28AM,Downloads,DEBUG   ,LAST DATES: BUND      , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: BUND      : PRICE (Quandl) last: 2017-01-11
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: BUND      : PRICE (IB) last: 2017-01-11
+20170113 12:31:28AM,Downloads,WARNING ,NO NU DATA: BUND      : PRICE mat. No update...
+20170113 12:31:28AM,Downloads,DEBUG   ,
+20170113 12:31:28AM,Downloads,WARNING ,Next roll info for, CAC, missing ************************************************
+20170113 12:31:28AM,Downloads,DEBUG   ,MATURITIES: CAC       , PRICE: 201702, CARRY: 201703
+20170113 12:31:28AM,Downloads,DEBUG   ,LAST DATES: CAC       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CAC       : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: CAC       : PRICE (IB) last: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CAC       : PRICE mat Quandl but no IB
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CAC       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/CAC_price.csv
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CAC       : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: CAC       : CARRY (IB) last: 2017-01-12
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CAC       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/CAC_carrydata.csv
+20170113 12:31:28AM,Downloads,DEBUG   ,
+20170113 12:31:28AM,Downloads,DEBUG   ,Market: CHFUSD, last FX data: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: CHFUSD    : fx (IB) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,
+20170113 12:31:28AM,Downloads,INFO    ,ROLL INFO : COPPER    : (201703 to 201706) Due in (days) : 47 
+20170113 12:31:28AM,Downloads,DEBUG   ,MATURITIES: COPPER    , PRICE: 201703, CARRY: 201704
+20170113 12:31:28AM,Downloads,DEBUG   ,LAST DATES: COPPER    , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : COPPER    : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: COPPER    : PRICE (IB) last: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : COPPER    : PRICE mat Quandl but no IB
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : COPPER    : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/COPPER_price.csv
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : COPPER    : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: COPPER    : CARRY (IB) last: 2017-01-12
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : COPPER    : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/COPPER_carrydata.csv
+20170113 12:31:28AM,Downloads,DEBUG   ,
+20170113 12:31:28AM,Downloads,INFO    ,ROLL INFO : CORN      : (201712 to 201812) Due in (days) : 244
+20170113 12:31:28AM,Downloads,DEBUG   ,MATURITIES: CORN      , PRICE: 201712, CARRY: 201709
+20170113 12:31:28AM,Downloads,DEBUG   ,LAST DATES: CORN      , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CORN      : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: CORN      : PRICE (IB) last: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CORN      : PRICE mat Quandl but no IB
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CORN      : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/CORN_price.csv
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CORN      : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: CORN      : CARRY (IB) last: 2017-01-12
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CORN      : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/CORN_carrydata.csv
+20170113 12:31:28AM,Downloads,DEBUG   ,
+20170113 12:31:28AM,Downloads,INFO    ,ROLL INFO : CRUDE_W   : (201712 to 201812) Due in (days) : 279
+20170113 12:31:28AM,Downloads,DEBUG   ,MATURITIES: CRUDE_W   , PRICE: 201712, CARRY: 201711
+20170113 12:31:28AM,Downloads,DEBUG   ,LAST DATES: CRUDE_W   , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CRUDE_W   : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: CRUDE_W   : PRICE (IB) last: 2017-01-11
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CRUDE_W   : PRICE mat Quandl but no IB
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CRUDE_W   : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/CRUDE_W_price.csv
+20170113 12:31:28AM,Downloads,INFO    ,NEW DATA  : CRUDE_W   : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:28AM,Downloads,DEBUG   ,NO NU DATA: CRUDE_W   : CARRY (IB) last: 2017-01-12
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : CRUDE_W   : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/CRUDE_W_carrydata.csv
+20170113 12:31:29AM,Downloads,DEBUG   ,
+20170113 12:31:29AM,Downloads,INFO    ,ROLL INFO : EDOLLAR   : (201912 to 202003) Due in (days) : 33 
+20170113 12:31:29AM,Downloads,DEBUG   ,MATURITIES: EDOLLAR   , PRICE: 201912, CARRY: 201909
+20170113 12:31:29AM,Downloads,DEBUG   ,LAST DATES: EDOLLAR   , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : EDOLLAR   : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: EDOLLAR   : PRICE (IB) last: 2017-01-11
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : EDOLLAR   : PRICE mat Quandl but no IB
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : EDOLLAR   : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/EDOLLAR_price.csv
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : EDOLLAR   : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: EDOLLAR   : CARRY (IB) last: 2017-01-12
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : EDOLLAR   : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/EDOLLAR_carrydata.csv
+20170113 12:31:29AM,Downloads,DEBUG   ,
+20170113 12:31:29AM,Downloads,INFO    ,ROLL INFO : EUR       : (201703 to 201706) Due in (days) : 56 
+20170113 12:31:29AM,Downloads,DEBUG   ,MATURITIES: EUR       , PRICE: 201703, CARRY: 201706
+20170113 12:31:29AM,Downloads,DEBUG   ,LAST DATES: EUR       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : EUR       : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: EUR       : PRICE (IB) last: 2017-01-11
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : EUR       : PRICE mat Quandl but no IB
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : EUR       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/EUR_price.csv
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : EUR       : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: EUR       : CARRY (IB) last: 2017-01-12
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : EUR       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/EUR_carrydata.csv
+20170113 12:31:29AM,Downloads,DEBUG   ,
+20170113 12:31:29AM,Downloads,INFO    ,ROLL INFO : EUROSTX   : (201703 to 201706) Due in (days) : 59 
+20170113 12:31:29AM,Downloads,DEBUG   ,MATURITIES: EUROSTX   , PRICE: 201703, CARRY: 201706
+20170113 12:31:29AM,Downloads,DEBUG   ,LAST DATES: EUROSTX   , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: EUROSTX   : PRICE (Quandl) last: 2017-01-11
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: EUROSTX   : PRICE (IB) last: 2017-01-11
+20170113 12:31:29AM,Downloads,WARNING ,NO NU DATA: EUROSTX   : PRICE mat. No update...
+20170113 12:31:29AM,Downloads,DEBUG   ,
+20170113 12:31:29AM,Downloads,DEBUG   ,Market: EURUSD, last FX data: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: EURUSD    : fx (IB) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,
+20170113 12:31:29AM,Downloads,INFO    ,ROLL INFO : GAS_US    : (201703 to 201704) Due in (days) : 10 
+20170113 12:31:29AM,Downloads,DEBUG   ,MATURITIES: GAS_US    , PRICE: 201703, CARRY: 201702
+20170113 12:31:29AM,Downloads,DEBUG   ,LAST DATES: GAS_US    , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GAS_US    : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: GAS_US    : PRICE (IB) last: 2017-01-11
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GAS_US    : PRICE mat Quandl but no IB
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GAS_US    : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/GAS_US_price.csv
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GAS_US    : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: GAS_US    : CARRY (IB) last: 2017-01-12
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GAS_US    : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/GAS_US_carrydata.csv
+20170113 12:31:29AM,Downloads,DEBUG   ,
+20170113 12:31:29AM,Downloads,INFO    ,ROLL INFO : GBP       : (201703 to 201706) Due in (days) : 56 
+20170113 12:31:29AM,Downloads,DEBUG   ,MATURITIES: GBP       , PRICE: 201703, CARRY: 201706
+20170113 12:31:29AM,Downloads,DEBUG   ,LAST DATES: GBP       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GBP       : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: GBP       : PRICE (IB) last: 2017-01-11
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GBP       : PRICE mat Quandl but no IB
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GBP       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/GBP_price.csv
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GBP       : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: GBP       : CARRY (IB) last: 2017-01-12
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GBP       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/GBP_carrydata.csv
+20170113 12:31:29AM,Downloads,DEBUG   ,
+20170113 12:31:29AM,Downloads,DEBUG   ,Market: GBPUSD, last FX data: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: GBPUSD    : fx (IB) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,
+20170113 12:31:29AM,Downloads,INFO    ,ROLL INFO : GOLD      : (201702 to 201706) Due in (days) : 24 
+20170113 12:31:29AM,Downloads,DEBUG   ,MATURITIES: GOLD      , PRICE: 201702, CARRY: 201704
+20170113 12:31:29AM,Downloads,DEBUG   ,LAST DATES: GOLD      , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GOLD      : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: GOLD      : PRICE (IB) last: 2017-01-11
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GOLD      : PRICE mat Quandl but no IB
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GOLD      : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/GOLD_price.csv
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GOLD      : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:29AM,Downloads,DEBUG   ,NO NU DATA: GOLD      : CARRY (IB) last: 2017-01-12
+20170113 12:31:29AM,Downloads,INFO    ,NEW DATA  : GOLD      : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/GOLD_carrydata.csv
+20170113 12:31:29AM,Downloads,DEBUG   ,
+20170113 12:31:29AM,Downloads,INFO    ,ROLL INFO : JPY       : (201703 to 201706) Due in (days) : 56 
+20170113 12:31:29AM,Downloads,DEBUG   ,MATURITIES: JPY       , PRICE: 201703, CARRY: 201706
+20170113 12:31:30AM,Downloads,DEBUG   ,LAST DATES: JPY       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : JPY       : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NO NU DATA: JPY       : PRICE (IB) last: 2017-01-11
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : JPY       : PRICE mat Quandl but no IB
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : JPY       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/JPY_price.csv
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : JPY       : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NO NU DATA: JPY       : CARRY (IB) last: 2017-01-12
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : JPY       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/JPY_carrydata.csv
+20170113 12:31:30AM,Downloads,DEBUG   ,
+20170113 12:31:30AM,Downloads,INFO    ,ROLL INFO : KOSPI     : (201703 to 201706) Due in (days) : 53 
+20170113 12:31:30AM,Downloads,DEBUG   ,MATURITIES: KOSPI     , PRICE: 201703, CARRY: 201706
+20170113 12:31:30AM,Downloads,DEBUG   ,LAST DATES: KOSPI     , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KOSPI     : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KOSPI     : PRICE (IB) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NEW DATA  : KOSPI     : PRICE mat IB = Quandl
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KOSPI     : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/KOSPI_price.csv
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KOSPI     : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,INFO    ,NO NU DATA: KOSPI     : CARRY (IB) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NEW DATA  : KOSPI     : CARRY mat IB=Quandl
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KOSPI     : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/KOSPI_carrydata.csv
+20170113 12:31:30AM,Downloads,DEBUG   ,
+20170113 12:31:30AM,Downloads,INFO    ,ROLL INFO : KR10      : (201703 to 201706) Due in (days) : 67 
+20170113 12:31:30AM,Downloads,DEBUG   ,MATURITIES: KR10      , PRICE: 201703, CARRY: 201706
+20170113 12:31:30AM,Downloads,DEBUG   ,LAST DATES: KR10      , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KR10      : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KR10      : PRICE (IB) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NEW DATA  : KR10      : PRICE mat IB = Quandl
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KR10      : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/KR10_price.csv
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KR10      : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NO NU DATA: KR10      : CARRY (IB) last: 2017-01-12
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KR10      : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/KR10_carrydata.csv
+20170113 12:31:30AM,Downloads,DEBUG   ,
+20170113 12:31:30AM,Downloads,INFO    ,ROLL INFO : KR3       : (201703 to 201706) Due in (days) : 67 
+20170113 12:31:30AM,Downloads,DEBUG   ,MATURITIES: KR3       , PRICE: 201703, CARRY: 201706
+20170113 12:31:30AM,Downloads,DEBUG   ,LAST DATES: KR3       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KR3       : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KR3       : PRICE (IB) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NEW DATA  : KR3       : PRICE mat IB = Quandl
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KR3       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/KR3_price.csv
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KR3       : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : KR3       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/KR3_carrydata.csv
+20170113 12:31:30AM,Downloads,DEBUG   ,
+20170113 12:31:30AM,Downloads,DEBUG   ,Market: KRWUSD, last FX data: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NO NU DATA: KRWUSD    : fx (IB) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,
+20170113 12:31:30AM,Downloads,INFO    ,ROLL INFO : LEANHOG   : (201706 to 201806) Due in (days) : 148
+20170113 12:31:30AM,Downloads,DEBUG   ,MATURITIES: LEANHOG   , PRICE: 201706, CARRY: 201707
+20170113 12:31:30AM,Downloads,DEBUG   ,LAST DATES: LEANHOG   , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : LEANHOG   : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NO NU DATA: LEANHOG   : PRICE (IB) last: 2017-01-11
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : LEANHOG   : PRICE mat Quandl but no IB
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : LEANHOG   : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/LEANHOG_price.csv
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : LEANHOG   : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NO NU DATA: LEANHOG   : CARRY (IB) last: 2017-01-12
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : LEANHOG   : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/LEANHOG_carrydata.csv
+20170113 12:31:30AM,Downloads,DEBUG   ,
+20170113 12:31:30AM,Downloads,INFO    ,ROLL INFO : LIVECOW   : (201710 to 201810) Due in (days) : 231
+20170113 12:31:30AM,Downloads,DEBUG   ,MATURITIES: LIVECOW   , PRICE: 201710, CARRY: 201708
+20170113 12:31:30AM,Downloads,DEBUG   ,LAST DATES: LIVECOW   , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : LIVECOW   : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NO NU DATA: LIVECOW   : PRICE (IB) last: 2017-01-11
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : LIVECOW   : PRICE mat Quandl but no IB
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : LIVECOW   : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/LIVECOW_price.csv
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : LIVECOW   : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:30AM,Downloads,DEBUG   ,NO NU DATA: LIVECOW   : CARRY (IB) last: 2017-01-12
+20170113 12:31:30AM,Downloads,INFO    ,NEW DATA  : LIVECOW   : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/LIVECOW_carrydata.csv
+20170113 12:31:30AM,Downloads,DEBUG   ,
+20170113 12:31:30AM,Downloads,INFO    ,ROLL INFO : MXP       : (201703 to 201706) Due in (days) : 56 
+20170113 12:31:31AM,Downloads,DEBUG   ,MATURITIES: MXP       , PRICE: 201703, CARRY: 201706
+20170113 12:31:31AM,Downloads,DEBUG   ,LAST DATES: MXP       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:31AM,Downloads,INFO    ,NEW DATA  : MXP       : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:31AM,Downloads,DEBUG   ,NO NU DATA: MXP       : PRICE (IB) last: 2017-01-11
+20170113 12:31:31AM,Downloads,INFO    ,NEW DATA  : MXP       : PRICE mat Quandl but no IB
+20170113 12:31:31AM,Downloads,INFO    ,NEW DATA  : MXP       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/MXP_price.csv
+20170113 12:31:31AM,Downloads,INFO    ,NEW DATA  : MXP       : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:31AM,Downloads,DEBUG   ,NO NU DATA: MXP       : CARRY (IB) last: 2017-01-12
+20170113 12:31:31AM,Downloads,INFO    ,NEW DATA  : MXP       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/MXP_carrydata.csv
+20170113 12:31:31AM,Downloads,DEBUG   ,
+20170113 12:31:31AM,Downloads,INFO    ,ROLL INFO : NASDAQ    : (201703 to 201706) Due in (days) : 55 
+20170113 12:31:32AM,Downloads,DEBUG   ,MATURITIES: NASDAQ    , PRICE: 201703, CARRY: 201706
+20170113 12:31:32AM,Downloads,DEBUG   ,LAST DATES: NASDAQ    , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : NASDAQ    : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: NASDAQ    : PRICE (IB) last: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : NASDAQ    : PRICE mat Quandl but no IB
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : NASDAQ    : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/NASDAQ_price.csv
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : NASDAQ    : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: NASDAQ    : CARRY (IB) last: 2017-01-12
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : NASDAQ    : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/NASDAQ_carrydata.csv
+20170113 12:31:32AM,Downloads,DEBUG   ,
+20170113 12:31:32AM,Downloads,INFO    ,ROLL INFO : NZD       : (201703 to 201706) Due in (days) : 56 
+20170113 12:31:32AM,Downloads,DEBUG   ,MATURITIES: NZD       , PRICE: 201703, CARRY: 201706
+20170113 12:31:32AM,Downloads,DEBUG   ,LAST DATES: NZD       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : NZD       : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: NZD       : PRICE (IB) last: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : NZD       : PRICE mat Quandl but no IB
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : NZD       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/NZD_price.csv
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : NZD       : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: NZD       : CARRY (IB) last: 2017-01-12
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : NZD       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/NZD_carrydata.csv
+20170113 12:31:32AM,Downloads,DEBUG   ,
+20170113 12:31:32AM,Downloads,INFO    ,ROLL INFO : OAT       : (201703 to 201706) Due in (days) : 47 
+20170113 12:31:32AM,Downloads,DEBUG   ,MATURITIES: OAT       , PRICE: 201703, CARRY: 201706
+20170113 12:31:32AM,Downloads,DEBUG   ,LAST DATES: OAT       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: OAT       : PRICE (Quandl) last: 2017-01-11
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: OAT       : PRICE (IB) last: 2017-01-11
+20170113 12:31:32AM,Downloads,WARNING ,NO NU DATA: OAT       : PRICE mat. No update...
+20170113 12:31:32AM,Downloads,DEBUG   ,
+20170113 12:31:32AM,Downloads,INFO    ,ROLL INFO : PALLAD    : (201703 to 201706) Due in (days) : 46 
+20170113 12:31:32AM,Downloads,DEBUG   ,MATURITIES: PALLAD    , PRICE: 201703, CARRY: 201706
+20170113 12:31:32AM,Downloads,DEBUG   ,LAST DATES: PALLAD    , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : PALLAD    : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: PALLAD    : PRICE (IB) last: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : PALLAD    : PRICE mat Quandl but no IB
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : PALLAD    : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/PALLAD_price.csv
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : PALLAD    : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: PALLAD    : CARRY (IB) last: 2017-01-12
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : PALLAD    : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/PALLAD_carrydata.csv
+20170113 12:31:32AM,Downloads,DEBUG   ,
+20170113 12:31:32AM,Downloads,INFO    ,ROLL INFO : PLAT      : (201704 to 201707) Due in (days) : 77 
+20170113 12:31:32AM,Downloads,DEBUG   ,MATURITIES: PLAT      , PRICE: 201704, CARRY: 201707
+20170113 12:31:32AM,Downloads,DEBUG   ,LAST DATES: PLAT      , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : PLAT      : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: PLAT      : PRICE (IB) last: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : PLAT      : PRICE mat Quandl but no IB
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : PLAT      : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/PLAT_price.csv
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : PLAT      : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: PLAT      : CARRY (IB) last: 2017-01-12
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : PLAT      : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/PLAT_carrydata.csv
+20170113 12:31:32AM,Downloads,DEBUG   ,
+20170113 12:31:32AM,Downloads,INFO    ,ROLL INFO : SMI       : (201703 to 201706) Due in (days) : 59 
+20170113 12:31:32AM,Downloads,DEBUG   ,MATURITIES: SMI       , PRICE: 201703, CARRY: 201706
+20170113 12:31:32AM,Downloads,DEBUG   ,LAST DATES: SMI       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: SMI       : PRICE (Quandl) last: 2017-01-11
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: SMI       : PRICE (IB) last: 2017-01-11
+20170113 12:31:32AM,Downloads,WARNING ,NO NU DATA: SMI       : PRICE mat. No update...
+20170113 12:31:32AM,Downloads,DEBUG   ,
+20170113 12:31:32AM,Downloads,INFO    ,ROLL INFO : SOYBEAN   : (201711 to 201811) Due in (days) : 244
+20170113 12:31:32AM,Downloads,DEBUG   ,MATURITIES: SOYBEAN   , PRICE: 201711, CARRY: 201709
+20170113 12:31:32AM,Downloads,DEBUG   ,LAST DATES: SOYBEAN   , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : SOYBEAN   : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: SOYBEAN   : PRICE (IB) last: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : SOYBEAN   : PRICE mat Quandl but no IB
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : SOYBEAN   : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/SOYBEAN_price.csv
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : SOYBEAN   : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: SOYBEAN   : CARRY (IB) last: 2017-01-12
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : SOYBEAN   : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/SOYBEAN_carrydata.csv
+20170113 12:31:32AM,Downloads,DEBUG   ,
+20170113 12:31:32AM,Downloads,INFO    ,ROLL INFO : SP500     : (201703 to 201706) Due in (days) : 56 
+20170113 12:31:32AM,Downloads,DEBUG   ,MATURITIES: SP500     , PRICE: 201703, CARRY: 201706
+20170113 12:31:32AM,Downloads,DEBUG   ,LAST DATES: SP500     , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : SP500     : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: SP500     : PRICE (IB) last: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : SP500     : PRICE mat Quandl but no IB
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : SP500     : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/SP500_price.csv
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : SP500     : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:32AM,Downloads,DEBUG   ,NO NU DATA: SP500     : CARRY (IB) last: 2017-01-12
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : SP500     : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/SP500_carrydata.csv
+20170113 12:31:32AM,Downloads,DEBUG   ,
+20170113 12:31:32AM,Downloads,INFO    ,ROLL INFO : US10      : (201703 to 201706) Due in (days) : 41 
+20170113 12:31:32AM,Downloads,DEBUG   ,MATURITIES: US10      , PRICE: 201703, CARRY: 201706
+20170113 12:31:32AM,Downloads,DEBUG   ,LAST DATES: US10      , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:32AM,Downloads,INFO    ,NEW DATA  : US10      : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: US10      : PRICE (IB) last: 2017-01-11
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US10      : PRICE mat Quandl but no IB
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US10      : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/US10_price.csv
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US10      : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: US10      : CARRY (IB) last: 2017-01-12
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US10      : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/US10_carrydata.csv
+20170113 12:31:33AM,Downloads,DEBUG   ,
+20170113 12:31:33AM,Downloads,INFO    ,ROLL INFO : US2       : (201703 to 201706) Due in (days) : 41 
+20170113 12:31:33AM,Downloads,DEBUG   ,MATURITIES: US2       , PRICE: 201703, CARRY: 201706
+20170113 12:31:33AM,Downloads,DEBUG   ,LAST DATES: US2       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US2       : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: US2       : PRICE (IB) last: 2017-01-11
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US2       : PRICE mat Quandl but no IB
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US2       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/US2_price.csv
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US2       : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: US2       : CARRY (IB) last: 2017-01-12
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US2       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/US2_carrydata.csv
+20170113 12:31:33AM,Downloads,DEBUG   ,
+20170113 12:31:33AM,Downloads,INFO    ,ROLL INFO : US20      : (201703 to 201706) Due in (days) : 41 
+20170113 12:31:33AM,Downloads,DEBUG   ,MATURITIES: US20      , PRICE: 201703, CARRY: 201706
+20170113 12:31:33AM,Downloads,DEBUG   ,LAST DATES: US20      , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US20      : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: US20      : PRICE (IB) last: 2017-01-11
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US20      : PRICE mat Quandl but no IB
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US20      : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/US20_price.csv
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US20      : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: US20      : CARRY (IB) last: 2017-01-12
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US20      : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/US20_carrydata.csv
+20170113 12:31:33AM,Downloads,DEBUG   ,
+20170113 12:31:33AM,Downloads,INFO    ,ROLL INFO : US5       : (201703 to 201706) Due in (days) : 41 
+20170113 12:31:33AM,Downloads,DEBUG   ,MATURITIES: US5       , PRICE: 201703, CARRY: 201706
+20170113 12:31:33AM,Downloads,DEBUG   ,LAST DATES: US5       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US5       : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: US5       : PRICE (IB) last: 2017-01-11
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US5       : PRICE mat Quandl but no IB
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US5       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/US5_price.csv
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US5       : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: US5       : CARRY (IB) last: 2017-01-12
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : US5       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/US5_carrydata.csv
+20170113 12:31:33AM,Downloads,DEBUG   ,
+20170113 12:31:33AM,Downloads,ERROR   ,ROLL INFO : V2X       , (201702 to 201703) Date Passed!        <========================= Was due: 2017-01-12 00:00:00
+20170113 12:31:33AM,Downloads,DEBUG   ,MATURITIES: V2X       , PRICE: 201702, CARRY: 201701
+20170113 12:31:33AM,Downloads,DEBUG   ,LAST DATES: V2X       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: V2X       : PRICE (Quandl) last: 2017-01-11
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: V2X       : PRICE (IB) last: 2017-01-11
+20170113 12:31:33AM,Downloads,WARNING ,NO NU DATA: V2X       : PRICE mat. No update...
+20170113 12:31:33AM,Downloads,DEBUG   ,
+20170113 12:31:33AM,Downloads,ERROR   ,ROLL INFO : VIX       , (201702 to 201703) Date Passed!        <========================= Was due: 2017-01-12 00:00:00
+20170113 12:31:33AM,Downloads,DEBUG   ,MATURITIES: VIX       , PRICE: 20170215, CARRY: 20170118
+20170113 12:31:33AM,Downloads,DEBUG   ,LAST DATES: VIX       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: VIX       : PRICE (Quandl) last: 2017-01-11
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: VIX       : PRICE (IB) last: 2017-01-11
+20170113 12:31:33AM,Downloads,WARNING ,NO NU DATA: VIX       : PRICE mat. No update...
+20170113 12:31:33AM,Downloads,DEBUG   ,
+20170113 12:31:33AM,Downloads,INFO    ,ROLL INFO : WHEAT     : (201712 to 201812) Due in (days) : 245
+20170113 12:31:33AM,Downloads,DEBUG   ,MATURITIES: WHEAT     , PRICE: 201712, CARRY: 201709
+20170113 12:31:33AM,Downloads,DEBUG   ,LAST DATES: WHEAT     , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : WHEAT     : PRICE (Quandl) last: 2017-01-12
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: WHEAT     : PRICE (IB) last: 2017-01-11
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : WHEAT     : PRICE mat Quandl but no IB
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : WHEAT     : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/WHEAT_price.csv
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : WHEAT     : CARRY (Quandl) last: 2017-01-12
+20170113 12:31:33AM,Downloads,DEBUG   ,NO NU DATA: WHEAT     : CARRY (IB) last: 2017-01-12
+20170113 12:31:33AM,Downloads,INFO    ,NEW DATA  : WHEAT     : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/WHEAT_carrydata.csv
+20170113 07:16:34AM,Downloads,DEBUG   ,
+20170113 07:16:34AM,Downloads,WARNING ,Next roll info for, AEX, missing ************************************************
+20170113 07:16:34AM,Downloads,DEBUG   ,MATURITIES: AEX       , PRICE: 201702, CARRY: 201703
+20170113 07:16:34AM,Downloads,DEBUG   ,LAST DATES: AEX       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:34AM,Downloads,DEBUG   ,NO NU DATA: AEX       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:34AM,Downloads,DEBUG   ,NO NU DATA: AEX       : PRICE (IB) last: 2017-01-12
+20170113 07:16:34AM,Downloads,WARNING ,NO NU DATA: AEX       : PRICE mat. No update...
+20170113 07:16:34AM,Downloads,DEBUG   ,
+20170113 07:16:34AM,Downloads,INFO    ,ROLL INFO : AUD       : (201703 to 201706) Due in (days) : 56 
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: AUD       , PRICE: 201703, CARRY: 201706
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: AUD       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: AUD       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: AUD       : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,WARNING ,NO NU DATA: AUD       : PRICE mat. No update...
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,INFO    ,ROLL INFO : BOBL      : (201703 to 201706) Due in (days) : 47 
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: BOBL      , PRICE: 201703, CARRY: 201706
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: BOBL      , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BOBL      : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BOBL      : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NEW DATA  : BOBL      : PRICE mat IB = Quandl
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BOBL      : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/BOBL_price.csv
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BOBL      : CARRY (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,INFO    ,NO NU DATA: BOBL      : CARRY (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NEW DATA  : BOBL      : CARRY mat IB=Quandl
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BOBL      : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/BOBL_carrydata.csv
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,INFO    ,ROLL INFO : BTP       : (201703 to 201706) Due in (days) : 47 
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: BTP       , PRICE: 201703, CARRY: 201706
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: BTP       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BTP       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BTP       : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NEW DATA  : BTP       : PRICE mat IB = Quandl
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BTP       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/BTP_price.csv
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BTP       : CARRY (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: BTP       : CARRY (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BTP       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/BTP_carrydata.csv
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,INFO    ,ROLL INFO : BUND      : (201703 to 201706) Due in (days) : 47 
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: BUND      , PRICE: 201703, CARRY: 201706
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: BUND      , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BUND      : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BUND      : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NEW DATA  : BUND      : PRICE mat IB = Quandl
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BUND      : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/BUND_price.csv
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BUND      : CARRY (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,INFO    ,NO NU DATA: BUND      : CARRY (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NEW DATA  : BUND      : CARRY mat IB=Quandl
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : BUND      : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/BUND_carrydata.csv
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,WARNING ,Next roll info for, CAC, missing ************************************************
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: CAC       , PRICE: 201702, CARRY: 201703
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: CAC       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: CAC       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: CAC       : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,WARNING ,NO NU DATA: CAC       : PRICE mat. No update...
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,DEBUG   ,Market: CHFUSD, last FX data: 2017-01-12
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : CHFUSD    : fx data appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/CHFUSDfx.csv
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,INFO    ,ROLL INFO : COPPER    : (201703 to 201706) Due in (days) : 47 
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: COPPER    , PRICE: 201703, CARRY: 201704
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: COPPER    , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: COPPER    : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: COPPER    : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,WARNING ,NO NU DATA: COPPER    : PRICE mat. No update...
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,INFO    ,ROLL INFO : CORN      : (201712 to 201812) Due in (days) : 244
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: CORN      , PRICE: 201712, CARRY: 201709
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: CORN      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: CORN      : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: CORN      : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,WARNING ,NO NU DATA: CORN      : PRICE mat. No update...
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,INFO    ,ROLL INFO : CRUDE_W   : (201712 to 201812) Due in (days) : 279
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: CRUDE_W   , PRICE: 201712, CARRY: 201711
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: CRUDE_W   , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: CRUDE_W   : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: CRUDE_W   : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,WARNING ,NO NU DATA: CRUDE_W   : PRICE mat. No update...
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,INFO    ,ROLL INFO : EDOLLAR   : (201912 to 202003) Due in (days) : 33 
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: EDOLLAR   , PRICE: 201912, CARRY: 201909
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: EDOLLAR   , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: EDOLLAR   : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: EDOLLAR   : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,WARNING ,NO NU DATA: EDOLLAR   : PRICE mat. No update...
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,INFO    ,ROLL INFO : EUR       : (201703 to 201706) Due in (days) : 56 
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: EUR       , PRICE: 201703, CARRY: 201706
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: EUR       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: EUR       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: EUR       : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,WARNING ,NO NU DATA: EUR       : PRICE mat. No update...
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,INFO    ,ROLL INFO : EUROSTX   : (201703 to 201706) Due in (days) : 59 
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: EUROSTX   , PRICE: 201703, CARRY: 201706
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: EUROSTX   , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : EUROSTX   : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : EUROSTX   : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NEW DATA  : EUROSTX   : PRICE mat IB = Quandl
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : EUROSTX   : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/EUROSTX_price.csv
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : EUROSTX   : CARRY (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,INFO    ,NO NU DATA: EUROSTX   : CARRY (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NEW DATA  : EUROSTX   : CARRY mat IB=Quandl
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : EUROSTX   : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/EUROSTX_carrydata.csv
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,DEBUG   ,Market: EURUSD, last FX data: 2017-01-12
+20170113 07:16:35AM,Downloads,INFO    ,NEW DATA  : EURUSD    : fx data appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/EURUSDfx.csv
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,INFO    ,ROLL INFO : GAS_US    : (201703 to 201704) Due in (days) : 10 
+20170113 07:16:35AM,Downloads,DEBUG   ,MATURITIES: GAS_US    , PRICE: 201703, CARRY: 201702
+20170113 07:16:35AM,Downloads,DEBUG   ,LAST DATES: GAS_US    , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: GAS_US    : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:35AM,Downloads,DEBUG   ,NO NU DATA: GAS_US    : PRICE (IB) last: 2017-01-12
+20170113 07:16:35AM,Downloads,WARNING ,NO NU DATA: GAS_US    : PRICE mat. No update...
+20170113 07:16:35AM,Downloads,DEBUG   ,
+20170113 07:16:35AM,Downloads,INFO    ,ROLL INFO : GBP       : (201703 to 201706) Due in (days) : 56 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: GBP       , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: GBP       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: GBP       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: GBP       : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: GBP       : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,DEBUG   ,Market: GBPUSD, last FX data: 2017-01-12
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : GBPUSD    : fx data appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/GBPUSDfx.csv
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : GOLD      : (201702 to 201706) Due in (days) : 24 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: GOLD      , PRICE: 201702, CARRY: 201704
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: GOLD      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: GOLD      : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: GOLD      : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: GOLD      : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : JPY       : (201703 to 201706) Due in (days) : 56 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: JPY       , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: JPY       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: JPY       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: JPY       : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: JPY       : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : KOSPI     : (201703 to 201706) Due in (days) : 53 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: KOSPI     , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: KOSPI     , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: KOSPI     : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: KOSPI     : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: KOSPI     : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : KR10      : (201703 to 201706) Due in (days) : 67 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: KR10      , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: KR10      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: KR10      : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: KR10      : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: KR10      : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : KR3       : (201703 to 201706) Due in (days) : 67 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: KR3       , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: KR3       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: KR3       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: KR3       : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: KR3       : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,DEBUG   ,Market: KRWUSD, last FX data: 2017-01-12
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : KRWUSD    : fx data appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/KRWUSDfx.csv
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : LEANHOG   : (201706 to 201806) Due in (days) : 148
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: LEANHOG   , PRICE: 201706, CARRY: 201707
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: LEANHOG   , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: LEANHOG   : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: LEANHOG   : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: LEANHOG   : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : LIVECOW   : (201710 to 201810) Due in (days) : 231
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: LIVECOW   , PRICE: 201710, CARRY: 201708
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: LIVECOW   , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: LIVECOW   : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: LIVECOW   : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: LIVECOW   : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : MXP       : (201703 to 201706) Due in (days) : 56 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: MXP       , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: MXP       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: MXP       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: MXP       : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: MXP       : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : NASDAQ    : (201703 to 201706) Due in (days) : 55 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: NASDAQ    , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: NASDAQ    , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: NASDAQ    : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: NASDAQ    : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: NASDAQ    : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : NZD       : (201703 to 201706) Due in (days) : 56 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: NZD       , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: NZD       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: NZD       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: NZD       : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: NZD       : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : OAT       : (201703 to 201706) Due in (days) : 47 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: OAT       , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: OAT       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : OAT       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : OAT       : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NEW DATA  : OAT       : PRICE mat IB = Quandl
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : OAT       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/OAT_price.csv
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : OAT       : CARRY (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: OAT       : CARRY (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : OAT       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/OAT_carrydata.csv
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : PALLAD    : (201703 to 201706) Due in (days) : 46 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: PALLAD    , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: PALLAD    , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: PALLAD    : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: PALLAD    : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: PALLAD    : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : PLAT      : (201704 to 201707) Due in (days) : 77 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: PLAT      , PRICE: 201704, CARRY: 201707
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: PLAT      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: PLAT      : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: PLAT      : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: PLAT      : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : SMI       : (201703 to 201706) Due in (days) : 59 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: SMI       , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: SMI       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : SMI       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : SMI       : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NEW DATA  : SMI       : PRICE mat IB = Quandl
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : SMI       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/SMI_price.csv
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : SMI       : CARRY (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,INFO    ,NO NU DATA: SMI       : CARRY (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NEW DATA  : SMI       : CARRY mat IB=Quandl
+20170113 07:16:36AM,Downloads,INFO    ,NEW DATA  : SMI       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/SMI_carrydata.csv
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : SOYBEAN   : (201711 to 201811) Due in (days) : 244
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: SOYBEAN   , PRICE: 201711, CARRY: 201709
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: SOYBEAN   , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: SOYBEAN   : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: SOYBEAN   : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: SOYBEAN   : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : SP500     : (201703 to 201706) Due in (days) : 56 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: SP500     , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: SP500     , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: SP500     : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: SP500     : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: SP500     : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : US10      : (201703 to 201706) Due in (days) : 41 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: US10      , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: US10      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: US10      : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: US10      : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: US10      : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : US2       : (201703 to 201706) Due in (days) : 41 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: US2       , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: US2       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: US2       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: US2       : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: US2       : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : US20      : (201703 to 201706) Due in (days) : 41 
+20170113 07:16:36AM,Downloads,DEBUG   ,MATURITIES: US20      , PRICE: 201703, CARRY: 201706
+20170113 07:16:36AM,Downloads,DEBUG   ,LAST DATES: US20      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: US20      : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:36AM,Downloads,DEBUG   ,NO NU DATA: US20      : PRICE (IB) last: 2017-01-12
+20170113 07:16:36AM,Downloads,WARNING ,NO NU DATA: US20      : PRICE mat. No update...
+20170113 07:16:36AM,Downloads,DEBUG   ,
+20170113 07:16:36AM,Downloads,INFO    ,ROLL INFO : US5       : (201703 to 201706) Due in (days) : 41 
+20170113 07:16:37AM,Downloads,DEBUG   ,MATURITIES: US5       , PRICE: 201703, CARRY: 201706
+20170113 07:16:37AM,Downloads,DEBUG   ,LAST DATES: US5       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:37AM,Downloads,DEBUG   ,NO NU DATA: US5       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:37AM,Downloads,DEBUG   ,NO NU DATA: US5       : PRICE (IB) last: 2017-01-12
+20170113 07:16:37AM,Downloads,WARNING ,NO NU DATA: US5       : PRICE mat. No update...
+20170113 07:16:37AM,Downloads,DEBUG   ,
+20170113 07:16:37AM,Downloads,ERROR   ,ROLL INFO : V2X       , (201702 to 201703) Date Passed!        <========================= Was due: 2017-01-12 00:00:00
+20170113 07:16:37AM,Downloads,DEBUG   ,MATURITIES: V2X       , PRICE: 201702, CARRY: 201701
+20170113 07:16:37AM,Downloads,DEBUG   ,LAST DATES: V2X       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 07:16:37AM,Downloads,INFO    ,NEW DATA  : V2X       : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:37AM,Downloads,INFO    ,NEW DATA  : V2X       : PRICE (IB) last: 2017-01-12
+20170113 07:16:37AM,Downloads,DEBUG   ,NEW DATA  : V2X       : PRICE mat IB = Quandl
+20170113 07:16:37AM,Downloads,INFO    ,NEW DATA  : V2X       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/V2X_price.csv
+20170113 07:16:37AM,Downloads,INFO    ,NEW DATA  : V2X       : CARRY (Quandl) last: 2017-01-12
+20170113 07:16:37AM,Downloads,INFO    ,NO NU DATA: V2X       : CARRY (IB) last: 2017-01-12
+20170113 07:16:37AM,Downloads,DEBUG   ,NEW DATA  : V2X       : CARRY mat IB=Quandl
+20170113 07:16:37AM,Downloads,INFO    ,NEW DATA  : V2X       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/V2X_carrydata.csv
+20170113 07:16:37AM,Downloads,DEBUG   ,
+20170113 07:16:37AM,Downloads,ERROR   ,ROLL INFO : VIX       , (201702 to 201703) Date Passed!        <========================= Was due: 2017-01-12 00:00:00
+20170113 07:16:37AM,Downloads,DEBUG   ,MATURITIES: VIX       , PRICE: 20170215, CARRY: 20170118
+20170113 07:16:37AM,Downloads,DEBUG   ,LAST DATES: VIX       , PRICE: 2017-01-11, CARRY: 2017-01-11
+20170113 07:16:37AM,Downloads,DEBUG   ,NO NU DATA: VIX       : PRICE (Quandl) last: 2017-01-11
+20170113 07:16:37AM,Downloads,INFO    ,NEW DATA  : VIX       : PRICE (IB) last: 2017-01-12
+20170113 07:16:37AM,Downloads,INFO    ,NEW DATA  : VIX       : PRICE mat IB but no Quandl
+20170113 07:16:37AM,Downloads,INFO    ,NEW DATA  : VIX       : PRICE mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/VIX_price.csv
+20170113 07:16:37AM,Downloads,DEBUG   ,NO NU DATA: VIX       : CARRY (Quandl) last: 2017-01-11
+20170113 07:16:37AM,Downloads,INFO    ,NO NU DATA: VIX       : CARRY (IB) last: 2017-01-11
+20170113 07:16:37AM,Downloads,INFO    ,NEW DATA  : VIX       : CARRY mat appended to /home/pete/Repos/pysystemtrade/private/SystemR/data/VIX_carrydata.csv
+20170113 07:16:37AM,Downloads,DEBUG   ,
+20170113 07:16:37AM,Downloads,INFO    ,ROLL INFO : WHEAT     : (201712 to 201812) Due in (days) : 245
+20170113 07:16:37AM,Downloads,DEBUG   ,MATURITIES: WHEAT     , PRICE: 201712, CARRY: 201709
+20170113 07:16:37AM,Downloads,DEBUG   ,LAST DATES: WHEAT     , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 07:16:37AM,Downloads,DEBUG   ,NO NU DATA: WHEAT     : PRICE (Quandl) last: 2017-01-12
+20170113 07:16:37AM,Downloads,DEBUG   ,NO NU DATA: WHEAT     : PRICE (IB) last: 2017-01-12
+20170113 07:16:37AM,Downloads,WARNING ,NO NU DATA: WHEAT     : PRICE mat. No update...
+20170113 09:03:52AM,Downloads,DEBUG   ,
+20170113 09:03:52AM,Downloads,WARNING ,Next roll info for, AEX, missing ************************************************
+20170113 09:03:52AM,Downloads,DEBUG   ,MATURITIES: AEX       , PRICE: 201702, CARRY: 201703
+20170113 09:03:52AM,Downloads,DEBUG   ,LAST DATES: AEX       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:52AM,Downloads,DEBUG   ,NO NU DATA: AEX       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:52AM,Downloads,DEBUG   ,NO NU DATA: AEX       : PRICE (IB) last: 2017-01-12
+20170113 09:03:52AM,Downloads,WARNING ,NO NU DATA: AEX       : PRICE mat. No update...
+20170113 09:03:52AM,Downloads,DEBUG   ,
+20170113 09:03:52AM,Downloads,INFO    ,ROLL INFO : AUD       : (201703 to 201706) Due in (days) : 56 
+20170113 09:03:52AM,Downloads,DEBUG   ,MATURITIES: AUD       , PRICE: 201703, CARRY: 201706
+20170113 09:03:52AM,Downloads,DEBUG   ,LAST DATES: AUD       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:52AM,Downloads,DEBUG   ,NO NU DATA: AUD       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:52AM,Downloads,DEBUG   ,NO NU DATA: AUD       : PRICE (IB) last: 2017-01-12
+20170113 09:03:52AM,Downloads,WARNING ,NO NU DATA: AUD       : PRICE mat. No update...
+20170113 09:03:52AM,Downloads,DEBUG   ,
+20170113 09:03:52AM,Downloads,INFO    ,ROLL INFO : BOBL      : (201703 to 201706) Due in (days) : 47 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: BOBL      , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: BOBL      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: BOBL      : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: BOBL      : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: BOBL      : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : BTP       : (201703 to 201706) Due in (days) : 47 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: BTP       , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: BTP       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: BTP       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: BTP       : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: BTP       : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : BUND      : (201703 to 201706) Due in (days) : 47 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: BUND      , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: BUND      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: BUND      : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: BUND      : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: BUND      : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,WARNING ,Next roll info for, CAC, missing ************************************************
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: CAC       , PRICE: 201702, CARRY: 201703
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: CAC       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: CAC       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: CAC       : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: CAC       : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,DEBUG   ,Market: CHFUSD, last FX data: 2017-01-13
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: CHFUSD    : fx (IB) last: 2017-01-13
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : COPPER    : (201703 to 201706) Due in (days) : 47 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: COPPER    , PRICE: 201703, CARRY: 201704
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: COPPER    , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: COPPER    : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: COPPER    : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: COPPER    : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : CORN      : (201712 to 201812) Due in (days) : 244
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: CORN      , PRICE: 201712, CARRY: 201709
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: CORN      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: CORN      : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: CORN      : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: CORN      : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : CRUDE_W   : (201712 to 201812) Due in (days) : 279
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: CRUDE_W   , PRICE: 201712, CARRY: 201711
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: CRUDE_W   , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: CRUDE_W   : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: CRUDE_W   : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: CRUDE_W   : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : EDOLLAR   : (201912 to 202003) Due in (days) : 33 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: EDOLLAR   , PRICE: 201912, CARRY: 201909
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: EDOLLAR   , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: EDOLLAR   : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: EDOLLAR   : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: EDOLLAR   : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : EUR       : (201703 to 201706) Due in (days) : 56 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: EUR       , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: EUR       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: EUR       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: EUR       : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: EUR       : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : EUROSTX   : (201703 to 201706) Due in (days) : 59 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: EUROSTX   , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: EUROSTX   , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: EUROSTX   : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: EUROSTX   : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: EUROSTX   : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,DEBUG   ,Market: EURUSD, last FX data: 2017-01-13
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: EURUSD    : fx (IB) last: 2017-01-13
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : GAS_US    : (201703 to 201704) Due in (days) : 10 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: GAS_US    , PRICE: 201703, CARRY: 201702
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: GAS_US    , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: GAS_US    : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: GAS_US    : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: GAS_US    : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : GBP       : (201703 to 201706) Due in (days) : 56 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: GBP       , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: GBP       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: GBP       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: GBP       : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: GBP       : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,DEBUG   ,Market: GBPUSD, last FX data: 2017-01-13
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: GBPUSD    : fx (IB) last: 2017-01-13
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : GOLD      : (201702 to 201706) Due in (days) : 24 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: GOLD      , PRICE: 201702, CARRY: 201704
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: GOLD      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: GOLD      : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: GOLD      : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: GOLD      : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : JPY       : (201703 to 201706) Due in (days) : 56 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: JPY       , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: JPY       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: JPY       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: JPY       : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: JPY       : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : KOSPI     : (201703 to 201706) Due in (days) : 53 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: KOSPI     , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: KOSPI     , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: KOSPI     : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: KOSPI     : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: KOSPI     : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : KR10      : (201703 to 201706) Due in (days) : 67 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: KR10      , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: KR10      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: KR10      : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: KR10      : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: KR10      : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : KR3       : (201703 to 201706) Due in (days) : 67 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: KR3       , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: KR3       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: KR3       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: KR3       : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: KR3       : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,DEBUG   ,Market: KRWUSD, last FX data: 2017-01-13
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: KRWUSD    : fx (IB) last: 2017-01-13
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : LEANHOG   : (201706 to 201806) Due in (days) : 148
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: LEANHOG   , PRICE: 201706, CARRY: 201707
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: LEANHOG   , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: LEANHOG   : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: LEANHOG   : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: LEANHOG   : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : LIVECOW   : (201710 to 201810) Due in (days) : 231
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: LIVECOW   , PRICE: 201710, CARRY: 201708
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: LIVECOW   , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: LIVECOW   : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: LIVECOW   : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: LIVECOW   : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : MXP       : (201703 to 201706) Due in (days) : 56 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: MXP       , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: MXP       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: MXP       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: MXP       : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: MXP       : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : NASDAQ    : (201703 to 201706) Due in (days) : 55 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: NASDAQ    , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: NASDAQ    , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: NASDAQ    : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: NASDAQ    : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: NASDAQ    : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : NZD       : (201703 to 201706) Due in (days) : 56 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: NZD       , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: NZD       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: NZD       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: NZD       : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: NZD       : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : OAT       : (201703 to 201706) Due in (days) : 47 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: OAT       , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: OAT       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: OAT       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: OAT       : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: OAT       : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : PALLAD    : (201703 to 201706) Due in (days) : 46 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: PALLAD    , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: PALLAD    , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: PALLAD    : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: PALLAD    : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: PALLAD    : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : PLAT      : (201704 to 201707) Due in (days) : 77 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: PLAT      , PRICE: 201704, CARRY: 201707
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: PLAT      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: PLAT      : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:53AM,Downloads,DEBUG   ,NO NU DATA: PLAT      : PRICE (IB) last: 2017-01-12
+20170113 09:03:53AM,Downloads,WARNING ,NO NU DATA: PLAT      : PRICE mat. No update...
+20170113 09:03:53AM,Downloads,DEBUG   ,
+20170113 09:03:53AM,Downloads,INFO    ,ROLL INFO : SMI       : (201703 to 201706) Due in (days) : 59 
+20170113 09:03:53AM,Downloads,DEBUG   ,MATURITIES: SMI       , PRICE: 201703, CARRY: 201706
+20170113 09:03:53AM,Downloads,DEBUG   ,LAST DATES: SMI       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: SMI       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: SMI       : PRICE (IB) last: 2017-01-12
+20170113 09:03:54AM,Downloads,WARNING ,NO NU DATA: SMI       : PRICE mat. No update...
+20170113 09:03:54AM,Downloads,DEBUG   ,
+20170113 09:03:54AM,Downloads,INFO    ,ROLL INFO : SOYBEAN   : (201711 to 201811) Due in (days) : 244
+20170113 09:03:54AM,Downloads,DEBUG   ,MATURITIES: SOYBEAN   , PRICE: 201711, CARRY: 201709
+20170113 09:03:54AM,Downloads,DEBUG   ,LAST DATES: SOYBEAN   , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: SOYBEAN   : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: SOYBEAN   : PRICE (IB) last: 2017-01-12
+20170113 09:03:54AM,Downloads,WARNING ,NO NU DATA: SOYBEAN   : PRICE mat. No update...
+20170113 09:03:54AM,Downloads,DEBUG   ,
+20170113 09:03:54AM,Downloads,INFO    ,ROLL INFO : SP500     : (201703 to 201706) Due in (days) : 56 
+20170113 09:03:54AM,Downloads,DEBUG   ,MATURITIES: SP500     , PRICE: 201703, CARRY: 201706
+20170113 09:03:54AM,Downloads,DEBUG   ,LAST DATES: SP500     , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: SP500     : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: SP500     : PRICE (IB) last: 2017-01-12
+20170113 09:03:54AM,Downloads,WARNING ,NO NU DATA: SP500     : PRICE mat. No update...
+20170113 09:03:54AM,Downloads,DEBUG   ,
+20170113 09:03:54AM,Downloads,INFO    ,ROLL INFO : US10      : (201703 to 201706) Due in (days) : 41 
+20170113 09:03:54AM,Downloads,DEBUG   ,MATURITIES: US10      , PRICE: 201703, CARRY: 201706
+20170113 09:03:54AM,Downloads,DEBUG   ,LAST DATES: US10      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: US10      : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: US10      : PRICE (IB) last: 2017-01-12
+20170113 09:03:54AM,Downloads,WARNING ,NO NU DATA: US10      : PRICE mat. No update...
+20170113 09:03:54AM,Downloads,DEBUG   ,
+20170113 09:03:54AM,Downloads,INFO    ,ROLL INFO : US2       : (201703 to 201706) Due in (days) : 41 
+20170113 09:03:54AM,Downloads,DEBUG   ,MATURITIES: US2       , PRICE: 201703, CARRY: 201706
+20170113 09:03:54AM,Downloads,DEBUG   ,LAST DATES: US2       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: US2       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: US2       : PRICE (IB) last: 2017-01-12
+20170113 09:03:54AM,Downloads,WARNING ,NO NU DATA: US2       : PRICE mat. No update...
+20170113 09:03:54AM,Downloads,DEBUG   ,
+20170113 09:03:54AM,Downloads,INFO    ,ROLL INFO : US20      : (201703 to 201706) Due in (days) : 41 
+20170113 09:03:54AM,Downloads,DEBUG   ,MATURITIES: US20      , PRICE: 201703, CARRY: 201706
+20170113 09:03:54AM,Downloads,DEBUG   ,LAST DATES: US20      , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: US20      : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: US20      : PRICE (IB) last: 2017-01-12
+20170113 09:03:54AM,Downloads,WARNING ,NO NU DATA: US20      : PRICE mat. No update...
+20170113 09:03:54AM,Downloads,DEBUG   ,
+20170113 09:03:54AM,Downloads,INFO    ,ROLL INFO : US5       : (201703 to 201706) Due in (days) : 41 
+20170113 09:03:54AM,Downloads,DEBUG   ,MATURITIES: US5       , PRICE: 201703, CARRY: 201706
+20170113 09:03:54AM,Downloads,DEBUG   ,LAST DATES: US5       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: US5       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: US5       : PRICE (IB) last: 2017-01-12
+20170113 09:03:54AM,Downloads,WARNING ,NO NU DATA: US5       : PRICE mat. No update...
+20170113 09:03:54AM,Downloads,DEBUG   ,
+20170113 09:03:54AM,Downloads,WARNING ,Next roll info for, V2X, missing ************************************************
+20170113 09:03:54AM,Downloads,DEBUG   ,MATURITIES: V2X       , PRICE: 201703, CARRY: 201702
+20170113 09:03:54AM,Downloads,DEBUG   ,LAST DATES: V2X       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: V2X       : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: V2X       : PRICE (IB) last: 2017-01-12
+20170113 09:03:54AM,Downloads,WARNING ,NO NU DATA: V2X       : PRICE mat. No update...
+20170113 09:03:54AM,Downloads,DEBUG   ,
+20170113 09:03:54AM,Downloads,WARNING ,Next roll info for, VIX, missing ************************************************
+20170113 09:03:54AM,Downloads,DEBUG   ,MATURITIES: VIX       , PRICE: 20170322, CARRY: 20170215
+20170113 09:03:54AM,Downloads,DEBUG   ,LAST DATES: VIX       , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: VIX       : PRICE (Quandl) last: 2017-01-11
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: VIX       : PRICE (IB) last: 2017-01-12
+20170113 09:03:54AM,Downloads,WARNING ,NO NU DATA: VIX       : PRICE mat. No update...
+20170113 09:03:54AM,Downloads,DEBUG   ,
+20170113 09:03:54AM,Downloads,INFO    ,ROLL INFO : WHEAT     : (201712 to 201812) Due in (days) : 245
+20170113 09:03:54AM,Downloads,DEBUG   ,MATURITIES: WHEAT     , PRICE: 201712, CARRY: 201709
+20170113 09:03:54AM,Downloads,DEBUG   ,LAST DATES: WHEAT     , PRICE: 2017-01-12, CARRY: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: WHEAT     : PRICE (Quandl) last: 2017-01-12
+20170113 09:03:54AM,Downloads,DEBUG   ,NO NU DATA: WHEAT     : PRICE (IB) last: 2017-01-12
+20170113 09:03:54AM,Downloads,WARNING ,NO NU DATA: WHEAT     : PRICE mat. No update...
