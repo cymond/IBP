@@ -216,8 +216,9 @@ def main():
             print(matsdf)
             print(market_data_df)
 
+            download_ib_data(marketdatadf, matsdf, source_path)
             download_quandl_data(marketdatadf,matsdf, source_path)
-            download_ib_data(marketdatadf,matsdf, source_path)
+
 
 
 if __name__ == "__main__":

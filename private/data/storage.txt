@@ -1,0 +1,316 @@
+sys.executable:  /home/pete/Caver/bin/python
+os.get_cwd():  /home/pete/Documents/Python Packages/sysIB/private/data
+sys.version:  3.4.3 (default, Oct 14 2015, 20:28:29) 
+[GCC 4.8.4]
+sys.path
+['/home/pete/Documents/Python Packages/sysIB/private/data', '/home/pete/Caver/lib/python3.4', '/home/pete/Caver/lib/python3.4/plat-x86_64-linux-gnu', '/home/pete/Caver/lib/python3.4/lib-dynload', '/usr/lib/python3.4', '/usr/lib/python3.4/plat-x86_64-linux-gnu', '/home/pete/Caver/lib/python3.4/site-packages', '/home/pete/PycharmProjects/pysystemtrade', '/home/pete/.local/lib/python3.4/site-packages', '/usr/local/lib/python3.4/dist-packages', '/usr/lib/python3/dist-packages']
+--------------------------
+..
+--------------------------
+hello
+File accessible:  /home/pete/Documents/Python Packages/sysIB/private/data/admin/directories.csv
+             IB     PRICE
+CARVER                   
+AEX         EOE    201702
+AUD         AUD    201703
+BOBL        GBM    201703
+BTP         BTP    201703
+BUND        GBL    201703
+CAC       CAC40    201702
+CHFUSD      CHF       NaN
+COPPER       HG    201703
+CORN         ZC    201712
+CRUDE_W      CL    201712
+EDOLLAR      GE    201912
+EUR         EUR    201703
+EUROSTX  ESTX50    201703
+EURUSD      EUR       NaN
+GAS_US       NG    201704
+GBP         GBP    201703
+GBPUSD      GBP       NaN
+GOLD         GC    201702
+JPY         JPY    201703
+KOSPI      K200    201703
+KR10      FLKTB    201703
+KR3        3KTB    201703
+KRWUSD      KRW       NaN
+LEANHOG      HE    201706
+LIVECOW      LE    201710
+MXP         MXP    201703
+NASDAQ       NQ    201703
+NZD         NZD    201703
+OAT         OAT    201703
+PALLAD       PA    201703
+PLAT         PL    201704
+SMI         SMI    201703
+SOYBEAN      ZS    201711
+SP500        ES    201703
+US10         ZN    201703
+US2          ZT    201703
+US20         ZB    201703
+US5          ZF    201703
+V2X        V2TX    201704
+VIX         VIX  20170419
+WHEAT        ZW    201712
+             IB    DATEFROM   PRICE
+CARVER                             
+AEX         EOE  2017-02-17  201703
+AUD         AUD  2017-03-10  201706
+BOBL        GBM  2017-03-01  201706
+BTP         BTP  2017-03-01  201706
+BUND        GBL  2017-03-01  201706
+CAC       CAC40  2017-02-17  201703
+COPPER       HG  2017-03-01  201706
+CORN         ZC  2017-09-14  201812
+CRUDE_W      CL  2017-10-19  201812
+EDOLLAR      GE  2017-02-15  202003
+EUR         EUR  2017-03-10  201706
+EUROSTX  ESTX50  2017-03-13  201706
+GBP         GBP  2017-03-10  201706
+GOLD         GC  2017-02-06  201706
+JPY         JPY  2017-03-10  201706
+KOSPI      K200  2017-03-07  201706
+KR10      FLKTB  2017-03-21  201706
+KR3        3KTB  2017-03-21  201706
+LEANHOG      HE  2017-06-10  201806
+LIVECOW      LE  2017-09-01  201810
+MXP         MXP  2017-03-10  201706
+NASDAQ       NQ  2017-03-09  201706
+NZD         NZD  2017-03-10  201706
+OAT         OAT  2017-03-01  201706
+PALLAD       PA  2017-02-28  201706
+PLAT         PL  2017-03-31  201707
+SMI         SMI  2017-03-13  201706
+SOYBEAN      ZS  2017-09-14  201811
+SP500        ES  2017-03-10  201706
+US10         ZN  2017-02-23  201706
+US2          ZT  2017-02-23  201706
+US20         ZB  2017-02-23  201706
+US5          ZF  2017-02-23  201706
+WHEAT        ZW  2017-09-15  201812
+AEX         2017-01-26  
+AUD         2017-01-26  
+BOBL        2017-01-26  
+BTP         2017-01-26  
+BUND        2017-01-26  
+CAC         2017-01-26  
+---------- Forex
+CHFUSD      2017-01-27  
+COPPER      2017-01-26  
+CORN        2017-01-26  
+CRUDE_W     2017-01-26  
+EDOLLAR     2017-01-26  
+EUR         2017-01-26  
+EUROSTX     2017-01-26  
+---------- Forex
+EURUSD      2017-01-27  
+GAS_US      2017-01-26  
+GBP         2017-01-26  
+---------- Forex
+GBPUSD      2017-01-27  
+GOLD        2017-01-26  
+JPY         2017-01-26  
+KOSPI       2017-01-26  
+KR10        2017-01-26  
+KR3         2017-01-26  
+---------- Forex
+KRWUSD      2017-01-27  
+LEANHOG     2017-01-26  
+LIVECOW     2017-01-26  
+MXP         2017-01-26  
+NASDAQ      2017-01-26  
+NZD         2017-01-26  
+OAT         2017-01-26  
+PALLAD      2017-01-26  
+PLAT        2017-01-26  
+SMI         2017-01-26  
+SOYBEAN     2017-01-26  
+SP500       2017-01-26  
+US10        2017-01-26  
+US2         2017-01-26  
+US20        2017-01-26  
+US5         2017-01-26  
+V2X         2017-01-26  
+VIX         2017-01-26  
+WHEAT       2017-01-26  
+
+      MATURITY  QUANTITY  EXPIRY  POSITION
+IB                                        
+AUD     201703         1  201703         1
+GBM     201703         3  201703         3
+BTP     201703        -1  201703        -1
+HG      201703         1  201703         1
+ZC      201712        -1  201712        -1
+NG      201704        -1  201703        -1
+K200    201703         1  201703         1
+FLKTB   201703        -1  201703        -1
+3KTB    201703        -2  201703        -4
+HE      201706         1  201706         1
+LE      201710         1  201710         1
+MXP     201703        -2  201703        -2
+NQ      201703         1  201703         1
+OAT     201703        -1  201703        -1
+ZS      201711         3  201711         3
+ZT      201703         1  201703         1
+V2TX    201704       -10  201704       -10
+VIX     201704        -3  201704        -3
+ZW      201712        -3  201712        -3
+
+sys.executable:  /home/pete/Caver/bin/python
+os.get_cwd():  /home/pete/Documents/Python Packages/sysIB/private/data
+sys.version:  3.4.3 (default, Oct 14 2015, 20:28:29) 
+[GCC 4.8.4]
+sys.path
+['/home/pete/Documents/Python Packages/sysIB/private/data', '/home/pete/Caver/lib/python3.4', '/home/pete/Caver/lib/python3.4/plat-x86_64-linux-gnu', '/home/pete/Caver/lib/python3.4/lib-dynload', '/usr/lib/python3.4', '/usr/lib/python3.4/plat-x86_64-linux-gnu', '/home/pete/Caver/lib/python3.4/site-packages', '/home/pete/PycharmProjects/pysystemtrade', '/home/pete/.local/lib/python3.4/site-packages', '/usr/local/lib/python3.4/dist-packages', '/usr/lib/python3/dist-packages']
+--------------------------
+..
+--------------------------
+hello
+File accessible:  admin/directories.csv
+             IB     PRICE
+CARVER                   
+AEX         EOE    201702
+AUD         AUD    201703
+BOBL        GBM    201703
+BTP         BTP    201703
+BUND        GBL    201703
+CAC       CAC40    201702
+CHFUSD      CHF       NaN
+COPPER       HG    201703
+CORN         ZC    201712
+CRUDE_W      CL    201712
+EDOLLAR      GE    201912
+EUR         EUR    201703
+EUROSTX  ESTX50    201703
+EURUSD      EUR       NaN
+GAS_US       NG    201704
+GBP         GBP    201703
+GBPUSD      GBP       NaN
+GOLD         GC    201702
+JPY         JPY    201703
+KOSPI      K200    201703
+KR10      FLKTB    201703
+KR3        3KTB    201703
+KRWUSD      KRW       NaN
+LEANHOG      HE    201706
+LIVECOW      LE    201710
+MXP         MXP    201703
+NASDAQ       NQ    201703
+NZD         NZD    201703
+OAT         OAT    201703
+PALLAD       PA    201703
+PLAT         PL    201704
+SMI         SMI    201703
+SOYBEAN      ZS    201711
+SP500        ES    201703
+US10         ZN    201703
+US2          ZT    201703
+US20         ZB    201703
+US5          ZF    201703
+V2X        V2TX    201704
+VIX         VIX  20170419
+WHEAT        ZW    201712
+             IB    DATEFROM   PRICE
+CARVER                             
+AEX         EOE  2017-02-17  201703
+AUD         AUD  2017-03-10  201706
+BOBL        GBM  2017-03-01  201706
+BTP         BTP  2017-03-01  201706
+BUND        GBL  2017-03-01  201706
+CAC       CAC40  2017-02-17  201703
+COPPER       HG  2017-03-01  201706
+CORN         ZC  2017-09-14  201812
+CRUDE_W      CL  2017-10-19  201812
+EDOLLAR      GE  2017-02-15  202003
+EUR         EUR  2017-03-10  201706
+EUROSTX  ESTX50  2017-03-13  201706
+GBP         GBP  2017-03-10  201706
+GOLD         GC  2017-02-06  201706
+JPY         JPY  2017-03-10  201706
+KOSPI      K200  2017-03-07  201706
+KR10      FLKTB  2017-03-21  201706
+KR3        3KTB  2017-03-21  201706
+LEANHOG      HE  2017-06-10  201806
+LIVECOW      LE  2017-09-01  201810
+MXP         MXP  2017-03-10  201706
+NASDAQ       NQ  2017-03-09  201706
+NZD         NZD  2017-03-10  201706
+OAT         OAT  2017-03-01  201706
+PALLAD       PA  2017-02-28  201706
+PLAT         PL  2017-03-31  201707
+SMI         SMI  2017-03-13  201706
+SOYBEAN      ZS  2017-09-14  201811
+SP500        ES  2017-03-10  201706
+US10         ZN  2017-02-23  201706
+US2          ZT  2017-02-23  201706
+US20         ZB  2017-02-23  201706
+US5          ZF  2017-02-23  201706
+WHEAT        ZW  2017-09-15  201812
+AEX         2017-01-26  
+AUD         2017-01-26  
+BOBL        2017-01-26  
+BTP         2017-01-26  
+BUND        2017-01-26  
+CAC         2017-01-26  
+---------- Forex
+CHFUSD      2017-01-27  
+COPPER      2017-01-26  
+CORN        2017-01-26  
+CRUDE_W     2017-01-26  
+EDOLLAR     2017-01-26  
+EUR         2017-01-26  
+EUROSTX     2017-01-26  
+---------- Forex
+EURUSD      2017-01-27  
+GAS_US      2017-01-26  
+GBP         2017-01-26  
+---------- Forex
+GBPUSD      2017-01-27  
+GOLD        2017-01-26  
+JPY         2017-01-26  
+KOSPI       2017-01-26  
+KR10        2017-01-26  
+KR3         2017-01-26  
+---------- Forex
+KRWUSD      2017-01-27  
+LEANHOG     2017-01-26  
+LIVECOW     2017-01-26  
+MXP         2017-01-26  
+NASDAQ      2017-01-26  
+NZD         2017-01-26  
+OAT         2017-01-26  
+PALLAD      2017-01-26  
+PLAT        2017-01-26  
+SMI         2017-01-26  
+SOYBEAN     2017-01-26  
+SP500       2017-01-26  
+US10        2017-01-26  
+US2         2017-01-26  
+US20        2017-01-26  
+US5         2017-01-26  
+V2X         2017-01-26  
+VIX         2017-01-26  
+WHEAT       2017-01-26  
+
+      MATURITY  QUANTITY  EXPIRY  POSITION
+IB                                        
+AUD     201703         1  201703         1
+GBM     201703         3  201703         3
+BTP     201703        -1  201703        -1
+HG      201703         1  201703         1
+ZC      201712        -1  201712        -1
+NG      201704        -1  201703        -1
+K200    201703         1  201703         1
+FLKTB   201703        -1  201703        -1
+3KTB    201703        -2  201703        -4
+HE      201706         1  201706         1
+LE      201710         1  201710         1
+MXP     201703        -2  201703        -2
+NQ      201703         1  201703         1
+OAT     201703        -1  201703        -1
+ZS      201711         3  201711         3
+ZT      201703         1  201703         1
+V2TX    201704       -10  201704       -10
+VIX     201704        -3  201704        -3
+ZW      201712        -3  201712        -3
+

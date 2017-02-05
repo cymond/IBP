@@ -1,3 +1,5 @@
 DIRECTION,PATH
 SOURCE,/home/pete/Documents/Python Packages/sysIB/private/data/
-DESTINATION,/home/pete/Repos/pysystemtrade/private/SystemR/data/
+OLD_DESTINATION,/home/pete/Repos/pysystemtrade/private/SystemR/data/
+DESTINATION,/home/pete/Repos/test/quality/private/SystemR/data/
+SYSTEM,/home/pete/Repos/test/quality/private/SystemR/

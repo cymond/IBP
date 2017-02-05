@@ -28,3 +28,16 @@
 20170113 07:16:52AM,Downloads,INFO    ,SPLICING  : VIX       : Stitched PRICE saved to file VIX_price.csv
 20170113 07:16:52AM,Downloads,INFO    ,SPLICING  : VIX       : Using IBr CARRY download files to splice
 20170113 07:16:52AM,Downloads,INFO    ,SPLICING  : VIX       : Stitched CARRY saved to file VIX_carrydata.csv
+20170125 12:24:06AM,Downloads,INFO    ,SPLICING  : GAS_US    : Quandl and IB PRICE download files DO NOT match
+20170125 12:24:06AM,Downloads,INFO    ,SPLICING  : GAS_US    : Using Quandl PRICE download files to splice
+20170125 12:24:06AM,Downloads,INFO    ,SPLICING  : GAS_US    : Stitched PRICE saved to file GAS_US_price.csv
+20170125 12:24:06AM,Downloads,INFO    ,SPLICING  : GAS_US    : Stitched CARRY saved to file GAS_US_carrydata.csv
+20170126 07:17:43AM,Downloads,INFO    ,SPLICING  : V2X       : Quandl and IB PRICE download files match
+20170126 07:17:43AM,Downloads,INFO    ,SPLICING  : V2X       : Using Quandl PRICE download files to splice
+20170126 07:17:43AM,Downloads,INFO    ,SPLICING  : V2X       : Stitched PRICE saved to file V2X_price.csv
+20170126 07:17:43AM,Downloads,INFO    ,SPLICING  : V2X       : Stitched CARRY saved to file V2X_carrydata.csv
+20170126 07:17:43AM,Downloads,WARNING ,SPLICING  : VIX       , No match for stitch date 2017-01-25 00:00:00, in Quandl PICE file
+20170126 07:17:43AM,Downloads,INFO    ,SPLICING  : VIX       : Using IB PRICE download files to splice
+20170126 07:17:43AM,Downloads,INFO    ,SPLICING  : VIX       : Stitched PRICE saved to file VIX_price.csv
+20170126 07:17:43AM,Downloads,INFO    ,SPLICING  : VIX       : Using IBr CARRY download files to splice
+20170126 07:17:43AM,Downloads,INFO    ,SPLICING  : VIX       : Stitched CARRY saved to file VIX_carrydata.csv

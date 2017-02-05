@@ -1,0 +1,2 @@
+sys.executable:  /home/pete/Caver/bin/python
+os.get_cwd():  /home/pete/Documents/Python Packages/sysIB/private/data

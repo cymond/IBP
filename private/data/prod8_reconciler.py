@@ -20,10 +20,17 @@ def set_logging():
 
     # Create formatter and add it to handlers
     # formatter = logging.Formatter('%(message)s')
-    console_formatter = logging.Formatter('{asctime} {name} {levelname:8s} {message}', datefmt='%Y%m%d %I:%M:%S%p',
+
+    console_formatter = logging.Formatter('{asctime} {name} {levelname:8s} {message}', datefmt='%Y%m%d %I:%M:%S%p',\
                                           style='{')
-    file_formatter = logging.Formatter('{asctime},{name},{levelname:8s},{message}', datefmt='%Y%m%d %I:%M:%S%p',
+    file_formatter = logging.Formatter('{asctime},{name},{levelname:8s},{message}', datefmt='%Y%m%d %I:%M:%S%p',\
                                        style='{')
+    '''
+    console_formatter = logging.Formatter('{asctime} {name} {levelname:8s} {message}', datefmt='%Y%m%d %I:%M:%S%p')
+
+
+    file_formatter = logging.Formatter('{asctime},{name},{levelname:8s},{message}', datefmt='%Y%m%d %I:%M:%S%p')
+    '''
     file_handler.setFormatter(file_formatter)
     console_handler.setFormatter(console_formatter)
 
@@ -59,19 +66,23 @@ def main():
     import numpy as np
     from swigibpy import Contract as IBcontract
 
-    path = '/home/pete/Repos/pysystemtrade/private/SystemR/'
-    positions_file = path + 'positions/system.csv'
-    positions_df = pd.read_csv(positions_file, index_col=0, dtype={'MATURITY': str, 'PRICE': str})
+
 
     dir_filename = "../data/admin/directories.csv"
+    print("os.get_cwd(): ", os.getcwd())
     if not os.path.isfile(dir_filename):
+        print()
         logger.error("The file, {}, does not exist".format(dir_filename))
     else:
         # Get daily system positions
         dir_df = pd.read_csv(dir_filename, index_col=['DIRECTION'], dtype={'PATH': str})
         source_path = dir_df.loc['SOURCE'][0] # /home/pete/Documents/Python Packages/sysIB/private/data/
         legacy_path = dir_df.loc['DESTINATION'][0]
-        market_data_filename = source_path + 'admin/' + 'new_marketdata_test.csv'
+        system_path = dir_df.loc['SYSTEM'][0]
+        positions_file = system_path + 'admin/positions/system.csv'
+        positions_df = pd.read_csv(positions_file, index_col=0, dtype={'MATURITY': str, 'PRICE': str})
+
+        market_data_filename = source_path + 'admin/new_marketdata_test.csv'
         market_data_df = pd.read_csv(market_data_filename,  dtype={'CARRY': str, 'PRICE': str})
         # For each market we only need most recent (by DATETIME) row where DONE == 1
         #live_market_df = market_data_df[market_data_df.DONE == 1]

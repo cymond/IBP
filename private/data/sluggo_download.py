@@ -296,6 +296,8 @@ def main():
         next_markets_df = temp_df.groupby('CARVER').head(1)
         #print(next_markets_df)
         #print(next_markets_df[['CARVER', 'DATEFROM']])
+        # Create a list in this scope for reporting afterwards. The list will hold a dictionary per
+        all_markets = []
         for market in curr_markets_df.itertuples():
             logger.debug("")
             market_df =  curr_markets_df.loc[curr_markets_df['CARVER'] == market.CARVER]

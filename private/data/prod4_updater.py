@@ -75,7 +75,7 @@ def update_futures_market(rowdf, new_data_path, legacy_data_path):
         quandl_df = quandl_price_df.set_index('DATETIME').copy()
         quandl_df = quandl_df.loc[last_price_date:][1:]
         if quandl_df.empty:
-            logger.debug("NO NU DATA: {:<10}: PRICE (Quandl) last: {}".format(market, last_quandl_date))
+            logger.debug("NO NU DATA: {:<10}: PRICE (Quandl) download file empty".format(market))
         else:
             logger.info("NEW DATA  : {:<10}: PRICE (Quandl) last: {}".format(market, last_quandl_date))
             quandl_price_updates = True
@@ -89,7 +89,7 @@ def update_futures_market(rowdf, new_data_path, legacy_data_path):
         ib_df = ib_price_df.set_index('DATETIME').copy()
         ib_df = ib_df.loc[last_price_date:][1:]
         if ib_df.empty:
-            logger.debug("NO NU DATA: {:<10}: PRICE (IB) last: {}".format(market, last_ib_date))
+            logger.debug("NO NU DATA: {:<10}: PRICE (IB) download file empty".format(market))
         else:
             logger.info("NEW DATA  : {:<10}: PRICE (IB) last: {}".format(market, last_ib_date))
             ib_price_updates = True

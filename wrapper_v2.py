@@ -141,13 +141,7 @@ class IBclient(object):
         self.cb.init_error()
         self.cb.init_historicprices(tickerid)
             
-        # Request some historical data.
 
-        # PK DEBUG
-        #attrs = vars(self.cb)
-        # {'kids': 0, 'name': 'Dog', 'color': 'Spotted', 'age': 10, 'legs': 2, 'smell': 'Alot'}
-        # now dump this in some way or another
-        #print(', '.join("%s: %s" % item for item in attrs.items()))
 
         self.tws.reqHistoricalData(
                 tickerid,                                          # tickerId,
@@ -161,18 +155,7 @@ class IBclient(object):
                 1                                           # formatDate
 
             )
-        '''
-        self.tws.reqHistoricalData(
-            tickerId=tickerid,  # tickerId,
-            contract=ibcontract,  # contract,
-            endDateTime = "20160312 17:00:00 GMT",
-            barSize = "1 day",
-            duration = "2 W",
-            useRTH = "1",
-            whatToShow = "TRADES",
-            timeFormat = "1"
-        )
-        '''
+
         start_time=time.time()
         finished=False
         iserror=False
